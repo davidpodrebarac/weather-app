@@ -1,0 +1,2704 @@
+{
+  "North America": {
+    "children": [
+      {
+        "title": "Canada",
+        "location_type": "Country",
+        "woeid": 23424775,
+        "latt_long": "56.954681,-98.308968",
+        "children": [
+          {
+            "title": "Calgary",
+            "location_type": "City",
+            "woeid": 8775,
+            "latt_long": "51.013371,-114.070877"
+          },
+          {
+            "title": "Edmonton",
+            "location_type": "City",
+            "woeid": 8676,
+            "latt_long": "53.555882,-113.492577"
+          },
+          {
+            "title": "Montr\u00e9al",
+            "location_type": "City",
+            "woeid": 3534,
+            "latt_long": "45.512402,-73.554680"
+          },
+          {
+            "title": "Toronto",
+            "location_type": "City",
+            "woeid": 4118,
+            "latt_long": "43.648560,-79.385368"
+          },
+          {
+            "title": "Vancouver",
+            "location_type": "City",
+            "woeid": 9807,
+            "latt_long": "49.267239,-123.145264"
+          }
+        ]
+      },
+      {
+        "title": "Mexico",
+        "location_type": "Country",
+        "woeid": 23424900,
+        "latt_long": "23.625740,-101.956253",
+        "children": [
+          {
+            "title": "Mexico City",
+            "location_type": "City",
+            "woeid": 116545,
+            "latt_long": "19.431900,-99.132851"
+          }
+        ]
+      },
+      {
+        "title": "United States",
+        "location_type": "Country",
+        "woeid": 23424977,
+        "latt_long": "45.176384, -123.0456",
+        "children": [
+          {
+            "title": "Alabama",
+            "location_type": "Region / State / Province",
+            "woeid": 2347559,
+            "latt_long": "32.614361,-86.680733",
+            "children": [
+              {
+                "title": "Birmingham",
+                "location_type": "City",
+                "woeid": 2364559,
+                "latt_long": "33.520290,-86.811501"
+              }
+            ]
+          },
+          {
+            "title": "Alaska",
+            "location_type": "Region / State / Province",
+            "woeid": 2347560,
+            "latt_long": "63.036541,-149.105682",
+            "children": [
+              {
+                "title": "Anchorage",
+                "location_type": "City",
+                "woeid": 2354490,
+                "latt_long": "61.217548,-149.858383"
+              }
+            ]
+          },
+          {
+            "title": "Arizona",
+            "location_type": "Region / State / Province",
+            "woeid": 2347561,
+            "latt_long": "34.167881,-111.930702",
+            "children": [
+              {
+                "title": "Mesa",
+                "location_type": "City",
+                "woeid": 2449808,
+                "latt_long": "33.417042,-111.831459"
+              },
+              {
+                "title": "Phoenix",
+                "location_type": "City",
+                "woeid": 2471390,
+                "latt_long": "33.448261,-112.075768"
+              },
+              {
+                "title": "Tucson",
+                "location_type": "City",
+                "woeid": 2508428,
+                "latt_long": "32.221550,-110.969749"
+              }
+            ]
+          },
+          {
+            "title": "Arkansas",
+            "location_type": "Region / State / Province",
+            "woeid": 2347562,
+            "latt_long": "34.751900,-92.130547",
+            "children": [
+              {
+                "title": "Little Rock",
+                "location_type": "City",
+                "woeid": 2440351,
+                "latt_long": "34.748650,-92.274490"
+              }
+            ]
+          },
+          {
+            "title": "California",
+            "location_type": "Region / State / Province",
+            "woeid": 2347563,
+            "latt_long": "37.271881,-119.270233",
+            "children": [
+              {
+                "title": "Bakersfield",
+                "location_type": "City",
+                "woeid": 2358492,
+                "latt_long": "35.351189,-119.024063"
+              },
+              {
+                "title": "Fresno",
+                "location_type": "City",
+                "woeid": 2407517,
+                "latt_long": "36.740681,-119.785728"
+              },
+              {
+                "title": "Lake Tahoe",
+                "location_type": "City",
+                "woeid": 23511744,
+                "latt_long": "39.021400,-120.044823"
+              },
+              {
+                "title": "Long Beach",
+                "location_type": "City",
+                "woeid": 2441472,
+                "latt_long": "33.766720,-118.192398"
+              },
+              {
+                "title": "Los Angeles",
+                "location_type": "City",
+                "woeid": 2442047,
+                "latt_long": "34.053490,-118.245323"
+              },
+              {
+                "title": "Mountain View",
+                "location_type": "City",
+                "woeid": 2455920,
+                "latt_long": "37.39999,-122.079552"
+              },
+              {
+                "title": "Oakland",
+                "location_type": "City",
+                "woeid": 2463583,
+                "latt_long": "37.80508,-122.273071"
+              },
+              {
+                "title": "Palm Springs",
+                "location_type": "City",
+                "woeid": 2467696,
+                "latt_long": "33.801559,-116.538193"
+              },
+              {
+                "title": "Sacramento",
+                "location_type": "City",
+                "woeid": 2486340,
+                "latt_long": "38.579060,-121.491013"
+              },
+              {
+                "title": "San Diego",
+                "location_type": "City",
+                "woeid": 2487889,
+                "latt_long": "32.715691,-117.161720"
+              },
+              {
+                "title": "San Francisco",
+                "location_type": "City",
+                "woeid": 2487956,
+                "latt_long": "37.777119, -122.41964"
+              },
+              {
+                "title": "San Jose",
+                "location_type": "City",
+                "woeid": 2488042,
+                "latt_long": "37.338581,-121.885567"
+              },
+              {
+                "title": "Santa Cruz",
+                "location_type": "City",
+                "woeid": 2488853,
+                "latt_long": "36.974018,-122.030952"
+              }
+            ]
+          },
+          {
+            "title": "Colorado",
+            "location_type": "Region / State / Province",
+            "woeid": 2347564,
+            "latt_long": "38.997921,-105.550957",
+            "children": [
+              {
+                "title": "Boulder",
+                "location_type": "City",
+                "woeid": 2367231,
+                "latt_long": "40.02779,-105.252487"
+              },
+              {
+                "title": "Colorado Springs",
+                "location_type": "City",
+                "woeid": 2383489,
+                "latt_long": "38.833450,-104.821808"
+              },
+              {
+                "title": "Denver",
+                "location_type": "City",
+                "woeid": 2391279,
+                "latt_long": "39.740009,-104.992264"
+              }
+            ]
+          },
+          {
+            "title": "Connecticut",
+            "location_type": "Region / State / Province",
+            "woeid": 2347565,
+            "latt_long": "41.517761,-72.757530",
+            "children": [
+              {
+                "title": "Bridgeport",
+                "location_type": "City",
+                "woeid": 2368947,
+                "latt_long": "41.181881,-73.191269"
+              }
+            ]
+          },
+          {
+            "title": "Delaware",
+            "location_type": "Region / State / Province",
+            "woeid": 2347566,
+            "latt_long": "39.145271,-75.418762",
+            "children": [
+              {
+                "title": "Wilmington",
+                "location_type": "City",
+                "woeid": 2521358,
+                "latt_long": "39.740231,-75.550842"
+              }
+            ]
+          },
+          {
+            "title": "District of Columbia",
+            "location_type": "Region / State / Province",
+            "woeid": 2347567,
+            "latt_long": "38.89381,-77.014648",
+            "children": [
+              {
+                "title": "Washington DC",
+                "location_type": "City",
+                "woeid": 2514815,
+                "latt_long": "38.899101,-77.028999"
+              }
+            ]
+          },
+          {
+            "title": "Florida",
+            "location_type": "Region / State / Province",
+            "woeid": 2347568,
+            "latt_long": "27.9758,-81.541061",
+            "children": [
+              {
+                "title": "Jacksonville",
+                "location_type": "City",
+                "woeid": 2428344,
+                "latt_long": "30.331381,-81.655800"
+              },
+              {
+                "title": "Miami",
+                "location_type": "City",
+                "woeid": 2450022,
+                "latt_long": "25.728979,-80.237419"
+              }
+            ]
+          },
+          {
+            "title": "Georgia",
+            "location_type": "Region / State / Province",
+            "woeid": 2347569,
+            "latt_long": "32.678280,-83.222954",
+            "children": [
+              {
+                "title": "Atlanta",
+                "location_type": "City",
+                "woeid": 2357024,
+                "latt_long": "33.748310,-84.391113"
+              }
+            ]
+          },
+          {
+            "title": "Hawaii",
+            "location_type": "Region / State / Province",
+            "woeid": 2347570,
+            "latt_long": "19.590090,-155.434143",
+            "children": [
+              {
+                "title": "Honolulu",
+                "location_type": "City",
+                "woeid": 2423945,
+                "latt_long": "21.304850,-157.857758"
+              }
+            ]
+          },
+          {
+            "title": "Idaho",
+            "location_type": "Region / State / Province",
+            "woeid": 2347571,
+            "latt_long": "45.494411,-114.143280",
+            "children": [
+              {
+                "title": "Boise",
+                "location_type": "City",
+                "woeid": 2366355,
+                "latt_long": "43.606979,-116.193413"
+              }
+            ]
+          },
+          {
+            "title": "Illinois",
+            "location_type": "Region / State / Province",
+            "woeid": 2347572,
+            "latt_long": "",
+            "children": [
+              {
+                "title": "Chicago",
+                "location_type": "City",
+                "woeid": 2379574,
+                "latt_long": "41.884151,-87.632408"
+              }
+            ]
+          },
+          {
+            "title": "Indiana",
+            "location_type": "Region / State / Province",
+            "woeid": 2347573,
+            "latt_long": "39.766178,-86.441048",
+            "children": [
+              {
+                "title": "Indianapolis",
+                "location_type": "City",
+                "woeid": 2427032,
+                "latt_long": "39.766911,-86.149963"
+              }
+            ]
+          },
+          {
+            "title": "Iowa",
+            "location_type": "Region / State / Province",
+            "woeid": 2347574,
+            "latt_long": "41.938251,-93.389893",
+            "children": [
+              {
+                "title": "Des Moines",
+                "location_type": "City",
+                "woeid": 2391446,
+                "latt_long": "41.573711,-93.617653"
+              }
+            ]
+          },
+          {
+            "title": "Kansas",
+            "location_type": "Region / State / Province",
+            "woeid": 2347575,
+            "latt_long": "38.498089,-98.320229",
+            "children": [
+              {
+                "title": "Wichita",
+                "location_type": "City",
+                "woeid": 2520077,
+                "latt_long": "37.686981,-97.335579"
+              }
+            ]
+          },
+          {
+            "title": "Kentucky",
+            "location_type": "Region / State / Province",
+            "woeid": 2347576,
+            "latt_long": "37.822449,-85.690910",
+            "children": [
+              {
+                "title": "Louisville",
+                "location_type": "City",
+                "woeid": 2442327,
+                "latt_long": "38.254860,-85.766403"
+              }
+            ]
+          },
+          {
+            "title": "Louisiana",
+            "location_type": "Region / State / Province",
+            "woeid": 2347577,
+            "latt_long": "30.974199,-91.523819",
+            "children": [
+              {
+                "title": "New Orleans",
+                "location_type": "City",
+                "woeid": 2458833,
+                "latt_long": "29.953690,-90.077713"
+              }
+            ]
+          },
+          {
+            "title": "Maine",
+            "location_type": "Region / State / Province",
+            "woeid": 2347578,
+            "latt_long": "45.262321,-69.012489",
+            "children": [
+              {
+                "title": "Portland",
+                "location_type": "City",
+                "woeid": 2475688,
+                "latt_long": "43.666667,-70.266667"
+              }
+            ]
+          },
+          {
+            "title": "Maryland",
+            "location_type": "Region / State / Province",
+            "woeid": 2347579,
+            "latt_long": "38.823502,-75.923813",
+            "children": [
+              {
+                "title": "Baltimore",
+                "location_type": "City",
+                "woeid": 2358820,
+                "latt_long": "39.290550,-76.609596"
+              }
+            ]
+          },
+          {
+            "title": "Massachusetts",
+            "location_type": "Region / State / Province",
+            "woeid": 2347580,
+            "latt_long": "42.184200,-71.718178",
+            "children": [
+              {
+                "title": "Boston",
+                "location_type": "City",
+                "woeid": 2367105,
+                "latt_long": "42.358631,-71.056702"
+              }
+            ]
+          },
+          {
+            "title": "Michigan",
+            "location_type": "Region / State / Province",
+            "woeid": 2347581,
+            "latt_long": "43.742699,-84.621674",
+            "children": [
+              {
+                "title": "Detroit",
+                "location_type": "City",
+                "woeid": 2391585,
+                "latt_long": "42.331680,-83.047920"
+              }
+            ]
+          },
+          {
+            "title": "Minnesota",
+            "location_type": "Region / State / Province",
+            "woeid": 2347582,
+            "latt_long": "46.442310,-93.365860",
+            "children": [
+              {
+                "title": "Minneapolis",
+                "location_type": "City",
+                "woeid": 2452078,
+                "latt_long": "44.979031,-93.264931"
+              }
+            ]
+          },
+          {
+            "title": "Mississippi",
+            "location_type": "Region / State / Province",
+            "woeid": 2347583,
+            "latt_long": "32.585072,-89.873741",
+            "children": [
+              {
+                "title": "Jackson",
+                "location_type": "City",
+                "woeid": 2428184,
+                "latt_long": "32.298691,-90.180489"
+              }
+            ]
+          },
+          {
+            "title": "Missouri",
+            "location_type": "Region / State / Province",
+            "woeid": 2347584,
+            "latt_long": "38.258900,-92.436592",
+            "children": [
+              {
+                "title": "Kansas City",
+                "location_type": "Region / State / Province",
+                "woeid": 2430683,
+                "latt_long": "39.102951,-94.583061"
+              },
+              {
+                "title": "St. Louis",
+                "location_type": "City",
+                "woeid": 2486982,
+                "latt_long": "38.627701,-90.199501"
+              }
+            ]
+          },
+          {
+            "title": "Montana",
+            "location_type": "Region / State / Province",
+            "woeid": 2347585,
+            "latt_long": "46.679489,-110.044540",
+            "children": [
+              {
+                "title": "Billings",
+                "location_type": "City",
+                "woeid": 2364254,
+                "latt_long": "45.783821,-108.505676"
+              }
+            ]
+          },
+          {
+            "title": "Nebraska",
+            "location_type": "Region / State / Province",
+            "woeid": 2347586,
+            "latt_long": "41.500751,-99.680946",
+            "children": [
+              {
+                "title": "Omaha",
+                "location_type": "City",
+                "woeid": 2465512,
+                "latt_long": "41.260689,-95.940590"
+              }
+            ]
+          },
+          {
+            "title": "Nevada",
+            "location_type": "Region / State / Province",
+            "woeid": 2347587,
+            "latt_long": "38.502048,-117.022583",
+            "children": [
+              {
+                "title": "Las Vegas",
+                "location_type": "City",
+                "woeid": 2436704,
+                "latt_long": "36.171909,-115.139969"
+              }
+            ]
+          },
+          {
+            "title": "New Hampshire",
+            "location_type": "Region / State / Province",
+            "woeid": 2347588,
+            "latt_long": "44.001179,-71.634201",
+            "children": [
+              {
+                "title": "Manchester",
+                "location_type": "City",
+                "woeid": 2444674,
+                "latt_long": "42.990833,-71.463611"
+              }
+            ]
+          },
+          {
+            "title": "New Jersey",
+            "location_type": "Region / State / Province",
+            "woeid": 2347589,
+            "latt_long": "40.143230,-74.726707",
+            "children": [
+              {
+                "title": "Newark",
+                "location_type": "City",
+                "woeid": 2459269,
+                "latt_long": "40.731972,-74.174179"
+              }
+            ]
+          },
+          {
+            "title": "New Mexico",
+            "location_type": "Region / State / Province",
+            "woeid": 2347590,
+            "latt_long": "34.166119,-106.026123",
+            "children": [
+              {
+                "title": "Albuquerque",
+                "location_type": "City",
+                "woeid": 2352824,
+                "latt_long": "35.084179,-106.648643"
+              },
+              {
+                "title": "Santa Fe",
+                "location_type": "City",
+                "woeid": 2488867,
+                "latt_long": "35.666431,-105.972572"
+              }
+            ]
+          },
+          {
+            "title": "New York",
+            "location_type": "Region / State / Province",
+            "woeid": 2347591,
+            "latt_long": "42.855350,-76.501671",
+            "children": [
+              {
+                "title": "New York",
+                "location_type": "City",
+                "woeid": 2459115,
+                "latt_long": "40.71455,-74.007118"
+              }
+            ]
+          },
+          {
+            "title": "North Carolina",
+            "location_type": "Region / State / Province",
+            "woeid": 2347592,
+            "latt_long": "35.21962,-80.019547",
+            "children": [
+              {
+                "title": "Charlotte",
+                "location_type": "City",
+                "woeid": 2378426,
+                "latt_long": "35.222500,-80.837540"
+              },
+              {
+                "title": "Raleigh",
+                "location_type": "City",
+                "woeid": 2478307,
+                "latt_long": "35.785511,-78.642670"
+              }
+            ]
+          },
+          {
+            "title": "North Dakota",
+            "location_type": "Region / State / Province",
+            "woeid": 2347593,
+            "latt_long": "47.467838,-100.301849",
+            "children": [
+              {
+                "title": "Fargo",
+                "location_type": "City",
+                "woeid": 2402292,
+                "latt_long": "46.875912,-96.781761"
+              }
+            ]
+          },
+          {
+            "title": "Ohio",
+            "location_type": "Region / State / Province",
+            "woeid": 2347594,
+            "latt_long": "40.190331,-82.669472",
+            "children": [
+              {
+                "title": "Columbus",
+                "location_type": "City",
+                "woeid": 2383660,
+                "latt_long": "39.961990,-83.002747"
+              }
+            ]
+          },
+          {
+            "title": "Oklahoma",
+            "location_type": "Region / State / Province",
+            "woeid": 2347595,
+            "latt_long": "35.309139,-98.521019",
+            "children": [
+              {
+                "title": "Oklahoma City",
+                "location_type": "City",
+                "woeid": 2464592,
+                "latt_long": "35.472000,-97.520348"
+              }
+            ]
+          },
+          {
+            "title": "Oregon",
+            "location_type": "Region / State / Province",
+            "woeid": 2347596,
+            "latt_long": "44.115589,-120.514839",
+            "children": [
+              {
+                "title": "Portland",
+                "location_type": "City",
+                "woeid": 2475687,
+                "latt_long": "45.511791,-122.675629"
+              }
+            ]
+          },
+          {
+            "title": "Pennsylvania",
+            "location_type": "Region / State / Province",
+            "woeid": 2347597,
+            "latt_long": "40.994709,-77.604538",
+            "children": [
+              {
+                "title": "Philadelphia",
+                "location_type": "City",
+                "woeid": 2471217,
+                "latt_long": "39.952271,-75.162369"
+              }
+            ]
+          },
+          {
+            "title": "Rhode Island",
+            "location_type": "Region / State / Province",
+            "woeid": 2347598,
+            "latt_long": "41.661221,-71.555870",
+            "children": [
+              {
+                "title": "Providence",
+                "location_type": "City",
+                "woeid": 2477058,
+                "latt_long": "41.823872,-71.411987"
+              }
+            ]
+          },
+          {
+            "title": "South Carolina",
+            "location_type": "Region / State / Province",
+            "woeid": 2347599,
+            "latt_long": "33.626461,-80.947403",
+            "children": [
+              {
+                "title": "Columbia",
+                "location_type": "City",
+                "woeid": 2383552,
+                "latt_long": "34.000833,-81.035278"
+              }
+            ]
+          },
+          {
+            "title": "South Dakota",
+            "location_type": "Region / State / Province",
+            "woeid": 2347600,
+            "latt_long": "44.212559,-100.247063",
+            "children": [
+              {
+                "title": "Sioux Falls",
+                "location_type": "City",
+                "woeid": 2494126,
+                "latt_long": "43.545349,-96.731277"
+              }
+            ]
+          },
+          {
+            "title": "Tennessee",
+            "location_type": "Region / State / Province",
+            "woeid": 2347601,
+            "latt_long": "35.830730,-85.978737",
+            "children": [
+              {
+                "title": "Memphis",
+                "location_type": "City",
+                "woeid": 2449323,
+                "latt_long": "35.149681,-90.048920"
+              },
+              {
+                "title": "Nashville",
+                "location_type": "City",
+                "woeid": 2457170,
+                "latt_long": "36.167839,-86.778160"
+              }
+            ]
+          },
+          {
+            "title": "Texas",
+            "location_type": "Region / State / Province",
+            "woeid": 2347602,
+            "latt_long": "",
+            "children": [
+              {
+                "title": "Austin",
+                "location_type": "City",
+                "woeid": 2357536,
+                "latt_long": "30.267599,-97.742981"
+              },
+              {
+                "title": "Dallas",
+                "location_type": "City",
+                "woeid": 2388929,
+                "latt_long": "32.778149,-96.795403"
+              },
+              {
+                "title": "El Paso",
+                "location_type": "City",
+                "woeid": 2397816,
+                "latt_long": "31.759159,-106.487488"
+              },
+              {
+                "title": "Fort Worth",
+                "location_type": "City",
+                "woeid": 2406080,
+                "latt_long": "32.748631,-97.329247"
+              },
+              {
+                "title": "Houston",
+                "location_type": "City",
+                "woeid": 2424766,
+                "latt_long": "29.760450,-95.369781"
+              },
+              {
+                "title": "San Antonio",
+                "location_type": "City",
+                "woeid": 2487796,
+                "latt_long": "29.424580,-98.494614"
+              }
+            ]
+          },
+          {
+            "title": "Utah",
+            "location_type": "Region / State / Province",
+            "woeid": 2347603,
+            "latt_long": "39.499741,-111.547318",
+            "children": [
+              {
+                "title": "Salt Lake City",
+                "location_type": "City",
+                "woeid": 2487610,
+                "latt_long": "40.759499,-111.888229"
+              }
+            ]
+          },
+          {
+            "title": "Vermont",
+            "location_type": "Region / State / Province",
+            "woeid": 2347604,
+            "latt_long": "43.871651,-72.451653",
+            "children": [
+              {
+                "title": "Burlington",
+                "location_type": "City",
+                "woeid": 2372071,
+                "latt_long": "44.475922,-73.213226"
+              }
+            ]
+          },
+          {
+            "title": "Virginia",
+            "location_type": "Region / State / Province",
+            "woeid": 2347605,
+            "latt_long": "38.003349,-79.771271",
+            "children": [
+              {
+                "title": "Richmond",
+                "location_type": "City",
+                "woeid": 2480894,
+                "latt_long": "37.540699,-77.433647"
+              },
+              {
+                "title": "Virginia Beach",
+                "location_type": "City",
+                "woeid": 2512636,
+                "latt_long": "36.755020,-76.059196"
+              }
+            ]
+          },
+          {
+            "title": "Washington",
+            "location_type": "Region / State / Province",
+            "woeid": 2347606,
+            "latt_long": "47.2755146,-120.8506483",
+            "children": [
+              {
+                "title": "Seattle",
+                "location_type": "City",
+                "woeid": 2490383,
+                "latt_long": "47.603561,-122.329437"
+              }
+            ]
+          },
+          {
+            "title": "West Virginia",
+            "location_type": "Region / State / Province",
+            "woeid": 2347607,
+            "latt_long": "38.919739,-80.181679",
+            "children": [
+              {
+                "title": "Charleston",
+                "location_type": "City",
+                "woeid": 2378319,
+                "latt_long": "32.781151,-79.931602"
+              }
+            ]
+          },
+          {
+            "title": "Wisconsin",
+            "location_type": "Region / State / Province",
+            "woeid": 2347608,
+            "latt_long": "44.727200,-90.101257",
+            "children": [
+              {
+                "title": "Milwaukee",
+                "location_type": "City",
+                "woeid": 2451822,
+                "latt_long": "43.041809,-87.906837"
+              }
+            ]
+          },
+          {
+            "title": "Wyoming",
+            "location_type": "Region / State / Province",
+            "woeid": 2347609,
+            "latt_long": "43.000290,-107.554047",
+            "children": [
+              {
+                "title": "Cheyenne",
+                "location_type": "City",
+                "woeid": 2379552,
+                "latt_long": "41.134811,-104.821541"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "title": "North America",
+    "location_type": "Continent",
+    "woeid": 24865672,
+    "latt_long": "44.330818,-109.754723"
+  },
+  "Africa": {
+    "children": [
+      {
+        "title": "Democratic Republic of the Congo",
+        "location_type": "Country",
+        "woeid": 23424780,
+        "latt_long": "-4.034790,21.756269",
+        "children": [
+          {
+            "title": "Kinshasa",
+            "location_type": "City",
+            "woeid": 1290062,
+            "latt_long": "-4.316420,15.298340"
+          }
+        ]
+      },
+      {
+        "title": "Egypt",
+        "location_type": "Country",
+        "woeid": 23424802,
+        "latt_long": "26.837090,30.796391",
+        "children": [
+          {
+            "title": "Alexandria",
+            "location_type": "City",
+            "woeid": 1522006,
+            "latt_long": "31.210489, 29.912430"
+          },
+          {
+            "title": "Cairo",
+            "location_type": "City",
+            "woeid": 1521894,
+            "latt_long": "30.049950,31.248600"
+          }
+        ]
+      },
+      {
+        "title": "Ethiopia",
+        "location_type": "Country",
+        "woeid": 23424808,
+        "latt_long": "9.147300,40.493050",
+        "children": [
+          {
+            "title": "Addis Ababa",
+            "location_type": "City",
+            "woeid": 1313090,
+            "latt_long": "9.022730,38.746792"
+          }
+        ]
+      },
+      {
+        "title": "Ivory Coast",
+        "location_type": "Country",
+        "woeid": 23424854,
+        "latt_long": "7.546850,-5.547090",
+        "children": [
+          {
+            "title": "Abidjan",
+            "location_type": "City",
+            "woeid": 1339615,
+            "latt_long": "5.323390,-4.026270"
+          }
+        ]
+      },
+      {
+        "title": "Kenya",
+        "location_type": "Country",
+        "woeid": 23424863,
+        "latt_long": "-0.024350,37.903950",
+        "children": [
+          {
+            "title": "Mombasa",
+            "location_type": "City",
+            "woeid": 1528335,
+            "latt_long": "-4.053050,39.672852"
+          },
+          {
+            "title": "Nairobi",
+            "location_type": "City",
+            "woeid": 1528488,
+            "latt_long": "-1.270200,36.804138"
+          }
+        ]
+      },
+      {
+        "title": "Morocco",
+        "location_type": "Country",
+        "woeid": 23424893,
+        "latt_long": "31.434200,-6.402450",
+        "children": [
+          {
+            "title": "Casablanca",
+            "location_type": "City",
+            "woeid": 1532755,
+            "latt_long": "33.596611,-7.619340"
+          }
+        ]
+      },
+      {
+        "title": "Namibia",
+        "location_type": "Country",
+        "woeid": 23424987,
+        "latt_long": "-22.96566,18.48617",
+        "children": [
+          {
+            "title": "Windhoek",
+            "location_type": "City",
+            "woeid": 1466719,
+            "latt_long": "-22.559561,17.08445"
+          }
+        ]
+      },
+      {
+        "title": "Nigeria",
+        "location_type": "Country",
+        "woeid": 23424908,
+        "latt_long": "9.084570,8.674250",
+        "children": [
+          {
+            "title": "Ibadan",
+            "location_type": "City",
+            "woeid": 1393672,
+            "latt_long": "7.378840,3.895270"
+          },
+          {
+            "title": "Kano",
+            "location_type": "City",
+            "woeid": 1396803,
+            "latt_long": "11.988800,8.522990"
+          },
+          {
+            "title": "Lagos",
+            "location_type": "City",
+            "woeid": 1398823,
+            "latt_long": "6.439180,3.423480"
+          }
+        ]
+      },
+      {
+        "title": "South Africa",
+        "location_type": "Country",
+        "woeid": 23424942,
+        "latt_long": "-28.479330,24.679930",
+        "children": [
+          {
+            "title": "Cape Town",
+            "location_type": "City",
+            "woeid": 1591691,
+            "latt_long": "-33.919060,18.421961"
+          },
+          {
+            "title": "Durban",
+            "location_type": "City",
+            "woeid": 1580913,
+            "latt_long": "-29.855721,31.035110"
+          },
+          {
+            "title": "Johannesburg",
+            "location_type": "City",
+            "woeid": 1582504,
+            "latt_long": "-26.204941,28.040030"
+          }
+        ]
+      }
+    ],
+    "title": "Africa",
+    "location_type": "Continent",
+    "woeid": 24865670,
+    "latt_long": "2.070790,15.800480"
+  },
+  "Asia": {
+    "children": [
+      {
+        "title": "Bangladesh",
+        "location_type": "Country",
+        "woeid": 23424759,
+        "latt_long": "23.687450,90.350899",
+        "children": [
+          {
+            "title": "Dhaka",
+            "location_type": "City",
+            "woeid": 1915035,
+            "latt_long": "23.709801,90.407112"
+          }
+        ]
+      },
+      {
+        "title": "China",
+        "location_type": "Country",
+        "woeid": 23424781,
+        "latt_long": "36.894451,104.165649",
+        "children": [
+          {
+            "title": "Beijing",
+            "location_type": "City",
+            "woeid": 2151330,
+            "latt_long": "39.906010,116.387909"
+          },
+          {
+            "title": "Chengdu",
+            "location_type": "City",
+            "woeid": 2158433,
+            "latt_long": "30.67,104.071022"
+          },
+          {
+            "title": "Dongguan",
+            "location_type": "City",
+            "woeid": 2161842,
+            "latt_long": "23.046499,113.735817"
+          },
+          {
+            "title": "Guangzhou",
+            "location_type": "City",
+            "woeid": 2161838,
+            "latt_long": "23.107389,113.267616"
+          },
+          {
+            "title": "Hangzhou",
+            "location_type": "City",
+            "woeid": 2132574,
+            "latt_long": "30.252501,120.165024"
+          },
+          {
+            "title": "Hong Kong",
+            "location_type": "City",
+            "woeid": 2165352,
+            "latt_long": "22.411200,114.153999"
+          },
+          {
+            "title": "Shanghai",
+            "location_type": "City",
+            "woeid": 2151849,
+            "latt_long": "31.247709,121.472618"
+          },
+          {
+            "title": "Shenzhen",
+            "location_type": "City",
+            "woeid": 2161853,
+            "latt_long": "22.546789,114.112556"
+          },
+          {
+            "title": "Tianjin",
+            "location_type": "City",
+            "woeid": 2159908,
+            "latt_long": "39.128399,117.185112"
+          },
+          {
+            "title": "Wuhan",
+            "location_type": "City",
+            "woeid": 2163866,
+            "latt_long": "30.572399,114.279121"
+          }
+        ]
+      },
+      {
+        "title": "India",
+        "location_type": "Country",
+        "woeid": 23424848,
+        "latt_long": "21.786600,82.794762",
+        "children": [
+          {
+            "title": "Ahmedabad",
+            "location_type": "City",
+            "woeid": 2295402,
+            "latt_long": "23.030199,72.569870"
+          },
+          {
+            "title": "Bangalore",
+            "location_type": "City",
+            "woeid": 2295420,
+            "latt_long": "12.955800,77.620979"
+          },
+          {
+            "title": "Chennai",
+            "location_type": "City",
+            "woeid": 2295424,
+            "latt_long": "13.05939,80.245667"
+          },
+          {
+            "title": "Hyderabad",
+            "location_type": "City",
+            "woeid": 2295414,
+            "latt_long": "17.508829,78.434578"
+          },
+          {
+            "title": "Kolkata",
+            "location_type": "City",
+            "woeid": 2295386,
+            "latt_long": "22.549940,88.371582"
+          },
+          {
+            "title": "Mumbai",
+            "location_type": "City",
+            "woeid": 12586539,
+            "latt_long": "19.076191,72.875877"
+          },
+          {
+            "title": "New Delhi",
+            "location_type": "City",
+            "woeid": 28743736,
+            "latt_long": "28.643999,77.091003"
+          },
+          {
+            "title": "Pune",
+            "location_type": "City",
+            "woeid": 2295412,
+            "latt_long": "18.53611,73.85218"
+          },
+          {
+            "title": "Surat",
+            "location_type": "City",
+            "woeid": 2295405,
+            "latt_long": "21.165131,72.836182"
+          }
+        ]
+      },
+      {
+        "title": "Indonesia",
+        "location_type": "Country",
+        "woeid": 23424846,
+        "latt_long": "0.109740,113.917397",
+        "children": [
+          {
+            "title": "Denpasar",
+            "location_type": "City",
+            "woeid": 1047372,
+            "latt_long": "-8.662690,115.215492"
+          },
+          {
+            "title": "Jakarta",
+            "location_type": "City",
+            "woeid": 1047378,
+            "latt_long": "-6.171440,106.827820"
+          }
+        ]
+      },
+      {
+        "title": "Iran",
+        "location_type": "Country",
+        "woeid": 23424851,
+        "latt_long": "32.420650,53.682362",
+        "children": [
+          {
+            "title": "Tehr\u0101n",
+            "location_type": "City",
+            "woeid": 2251945,
+            "latt_long": "35.671940,51.424438"
+          }
+        ]
+      },
+      {
+        "title": "Iraq",
+        "location_type": "Country",
+        "woeid": 23424855,
+        "latt_long": "33.240520,43.689850",
+        "children": [
+          {
+            "title": "Baghdad",
+            "location_type": "City",
+            "woeid": 1979455,
+            "latt_long": "33.338612,44.393890"
+          }
+        ]
+      },
+      {
+        "title": "Japan",
+        "location_type": "Country",
+        "woeid": 23424856,
+        "latt_long": "37.487598,139.838287",
+        "children": [
+          {
+            "title": "Fukuoka",
+            "location_type": "City",
+            "woeid": 1117099,
+            "latt_long": "33.568699,130.346359"
+          },
+          {
+            "title": "Hiroshima",
+            "location_type": "City",
+            "woeid": 1117227,
+            "latt_long": "34.479988,132.437363"
+          },
+          {
+            "title": "Kawasaki",
+            "location_type": "City",
+            "woeid": 1117502,
+            "latt_long": "35.556332,139.675201"
+          },
+          {
+            "title": "Kitakyushu",
+            "location_type": "City",
+            "woeid": 1110809,
+            "latt_long": "33.845470,130.848557"
+          },
+          {
+            "title": "Kobe",
+            "location_type": "City",
+            "woeid": 1117545,
+            "latt_long": "34.757332,135.106766"
+          },
+          {
+            "title": "Kyoto",
+            "location_type": "City",
+            "woeid": 15015372,
+            "latt_long": "35.098129,135.718933"
+          },
+          {
+            "title": "Nagoya",
+            "location_type": "City",
+            "woeid": 1117817,
+            "latt_long": "35.149860,136.926224"
+          },
+          {
+            "title": "Osaka",
+            "location_type": "City",
+            "woeid": 15015370,
+            "latt_long": "34.6775,135.5032"
+          },
+          {
+            "title": "Saitama",
+            "location_type": "City",
+            "woeid": 1116753,
+            "latt_long": "35.915611,139.651657"
+          },
+          {
+            "title": "Sapporo",
+            "location_type": "City",
+            "woeid": 1118108,
+            "latt_long": "42.985321,141.248062"
+          },
+          {
+            "title": "Sendai",
+            "location_type": "City",
+            "woeid": 1118129,
+            "latt_long": "38.314362,140.758194"
+          },
+          {
+            "title": "Tokyo",
+            "location_type": "City",
+            "woeid": 1118370,
+            "latt_long": "35.670479,139.740921"
+          },
+          {
+            "title": "Yokohama",
+            "location_type": "City",
+            "woeid": 1118550,
+            "latt_long": "35.452702,139.595123"
+          }
+        ]
+      },
+      {
+        "title": "Malaysia",
+        "location_type": "Country",
+        "woeid": 23424901,
+        "latt_long": "3.945150,114.401657",
+        "children": [
+          {
+            "title": "Kuala Lumpur",
+            "location_type": "City",
+            "woeid": 1154781,
+            "latt_long": "3.152480,101.717270"
+          }
+        ]
+      },
+      {
+        "title": "Myanmar",
+        "location_type": "Country",
+        "woeid": 23424763,
+        "latt_long": "19.257959,96.682999",
+        "children": [
+          {
+            "title": "Yangon",
+            "location_type": "City",
+            "woeid": 1015662,
+            "latt_long": "16.803890,96.154694"
+          }
+        ]
+      },
+      {
+        "title": "North Korea",
+        "location_type": "Country",
+        "woeid": 23424865,
+        "latt_long": "40.339600,127.495216",
+        "children": [
+          {
+            "title": "Pyongyang",
+            "location_type": "City",
+            "woeid": 1079132,
+            "latt_long": "39.014221,125.776299"
+          }
+        ]
+      },
+      {
+        "title": "Pakistan",
+        "location_type": "Country",
+        "woeid": 23424922,
+        "latt_long": "30.441851,69.359703",
+        "children": [
+          {
+            "title": "Karachi",
+            "location_type": "City",
+            "woeid": 2211096,
+            "latt_long": "24.889780,67.028511"
+          },
+          {
+            "title": "Lahore",
+            "location_type": "City",
+            "woeid": 2211177,
+            "latt_long": "31.549910,74.327301"
+          }
+        ]
+      },
+      {
+        "title": "Philippines",
+        "location_type": "Country",
+        "woeid": 23424934,
+        "latt_long": "15.593050,120.739067",
+        "children": [
+          {
+            "title": "Manila",
+            "location_type": "City",
+            "woeid": 1199477,
+            "latt_long": "14.609620,121.005890"
+          }
+        ]
+      },
+      {
+        "title": "Saudi Arabia",
+        "location_type": "Country",
+        "woeid": 23424938,
+        "latt_long": "24.261190,45.120331",
+        "children": [
+          {
+            "title": "Riyadh",
+            "location_type": "City",
+            "woeid": 1939753,
+            "latt_long": "24.647320,46.714581"
+          }
+        ]
+      },
+      {
+        "title": "Singapore",
+        "location_type": "Country",
+        "woeid": 23424948,
+        "latt_long": "1.365580,103.827713",
+        "children": [
+          {
+            "title": "Singapore",
+            "location_type": "City",
+            "woeid": 1062617,
+            "latt_long": "1.293780,103.853256"
+          }
+        ]
+      },
+      {
+        "title": "South Korea",
+        "location_type": "Country",
+        "woeid": 23424868,
+        "latt_long": "36.448151,127.850166",
+        "children": [
+          {
+            "title": "Busan",
+            "location_type": "City",
+            "woeid": 1132447,
+            "latt_long": "35.170429,128.999481"
+          },
+          {
+            "title": "Seoul",
+            "location_type": "City",
+            "woeid": 1132599,
+            "latt_long": "37.557121,126.977379"
+          }
+        ]
+      },
+      {
+        "title": "Syria",
+        "location_type": "Country",
+        "woeid": 23424956,
+        "latt_long": "34.814800,39.056000",
+        "children": [
+          {
+            "title": "Damascus",
+            "location_type": "City",
+            "woeid": 1947122,
+            "latt_long": "33.519211,36.313309"
+          }
+        ]
+      },
+      {
+        "title": "Taiwan",
+        "location_type": "Country",
+        "woeid": 23424971,
+        "latt_long": "23.598440,121.017616",
+        "children": [
+          {
+            "title": "Taipei",
+            "location_type": "City",
+            "woeid": 2306179,
+            "latt_long": "25.085960,121.561478"
+          }
+        ]
+      },
+      {
+        "title": "Thailand",
+        "location_type": "Country",
+        "woeid": 23424960,
+        "latt_long": "13.036590,101.492500",
+        "children": [
+          {
+            "title": "Bangkok",
+            "location_type": "City",
+            "woeid": 1225448,
+            "latt_long": "13.753330,100.504822"
+          },
+          {
+            "title": "Phuket",
+            "location_type": "City",
+            "woeid": 1226113,
+            "latt_long": "7.88997,98.388458"
+          }
+        ]
+      },
+      {
+        "title": "Turkey",
+        "location_type": "Country",
+        "woeid": 23424969,
+        "latt_long": "38.957741,35.431702",
+        "children": [
+          {
+            "title": "Ankara",
+            "location_type": "City",
+            "woeid": 2343732,
+            "latt_long": "39.942928,32.860481"
+          },
+          {
+            "title": "Istanbul",
+            "location_type": "City",
+            "woeid": 2344116,
+            "latt_long": "41.040852,28.986179"
+          },
+          {
+            "title": "\u0130zmir",
+            "location_type": "City",
+            "woeid": 2344117,
+            "latt_long": "38.425209,27.142260"
+          }
+        ]
+      },
+      {
+        "title": "United Arab Emirates",
+        "location_type": "Country",
+        "woeid": 23424738,
+        "latt_long": "24.01,53.98",
+        "children": [
+          {
+            "title": "Dubai",
+            "location_type": "City",
+            "woeid": 1940345,
+            "latt_long": "25.269440,55.308651"
+          }
+        ]
+      },
+      {
+        "title": "Vietnam",
+        "location_type": "Country",
+        "woeid": 23424984,
+        "latt_long": "15.974210,107.868042",
+        "children": [
+          {
+            "title": "Ho Chi Minh City",
+            "location_type": "City",
+            "woeid": 1252431,
+            "latt_long": "10.759180,106.662498"
+          },
+          {
+            "title": "H\u00e0 N\u1ed9i",
+            "location_type": "City",
+            "woeid": 1236594,
+            "latt_long": "21.031950,105.819908"
+          }
+        ]
+      }
+    ],
+    "title": "Asia",
+    "location_type": "Continent",
+    "woeid": 24865671,
+    "latt_long": "34.969669,99.819054"
+  },
+  "Europe": {
+    "children": [
+      {
+        "title": "Austria",
+        "location_type": "Country",
+        "woeid": 23424750,
+        "latt_long": "47.696510,13.345770",
+        "children": [
+          {
+            "title": "Vienna",
+            "location_type": "City",
+            "woeid": 551801,
+            "latt_long": "48.202541,16.368799"
+          }
+        ]
+      },
+      {
+        "title": "Belarus",
+        "location_type": "Country",
+        "woeid": 23424765,
+        "latt_long": "53.711048,27.973749",
+        "children": [
+          {
+            "title": "Minsk",
+            "location_type": "City",
+            "woeid": 834463,
+            "latt_long": "53.90255,27.563101"
+          }
+        ]
+      },
+      {
+        "title": "Belgium",
+        "location_type": "Country",
+        "woeid": 23424757,
+        "latt_long": "50.501011,4.476840",
+        "children": [
+          {
+            "title": "Brussels",
+            "location_type": "City",
+            "woeid": 968019,
+            "latt_long": "50.848381,4.349680"
+          }
+        ]
+      },
+      {
+        "title": "Bulgaria",
+        "location_type": "Country",
+        "woeid": 23424771,
+        "latt_long": "42.731602,25.483120",
+        "children": [
+          {
+            "title": "Sofia",
+            "location_type": "City",
+            "woeid": 839722,
+            "latt_long": "42.697079,23.324551"
+          }
+        ]
+      },
+      {
+        "title": "Croatia",
+        "location_type": "Country",
+        "woeid": 23424843,
+        "latt_long": "44.746712,15.340800",
+        "children": [
+          {
+            "title": "Zagreb",
+            "location_type": "City",
+            "woeid": 851128,
+            "latt_long": "45.807259,15.967600"
+          }
+        ]
+      },
+      {
+        "title": "Czech Republic",
+        "location_type": "Country",
+        "woeid": 23424810,
+        "latt_long": "49.803879,15.474910",
+        "children": [
+          {
+            "title": "Prague",
+            "location_type": "City",
+            "woeid": 796597,
+            "latt_long": "50.079079,14.433220"
+          }
+        ]
+      },
+      {
+        "title": "Denmark",
+        "location_type": "Country",
+        "woeid": 23424796,
+        "latt_long": "56.276089,9.516950",
+        "children": [
+          {
+            "title": "Copenhagen",
+            "location_type": "City",
+            "woeid": 554890,
+            "latt_long": "55.676311,12.569350"
+          }
+        ]
+      },
+      {
+        "title": "Finland",
+        "location_type": "Country",
+        "woeid": 23424812,
+        "latt_long": "64.950142,26.067390",
+        "children": [
+          {
+            "title": "Helsinki",
+            "location_type": "City",
+            "woeid": 565346,
+            "latt_long": "60.171162,24.932581"
+          }
+        ]
+      },
+      {
+        "title": "France",
+        "location_type": "Country",
+        "woeid": 23424819,
+        "latt_long": "46.71,1.72",
+        "children": [
+          {
+            "title": "Ajaccio",
+            "location_type": "City",
+            "woeid": 575627,
+            "latt_long": "41.927311,8.74039"
+          },
+          {
+            "title": "Bordeaux",
+            "location_type": "City",
+            "woeid": 580778,
+            "latt_long": "44.836632,-0.581050"
+          },
+          {
+            "title": "Calvi",
+            "location_type": "City",
+            "woeid": 582723,
+            "latt_long": "42.5578,8.75379"
+          },
+          {
+            "title": "Lille",
+            "location_type": "City",
+            "woeid": 608105,
+            "latt_long": "50.637150,3.062830"
+          },
+          {
+            "title": "Lyon",
+            "location_type": "City",
+            "woeid": 609125,
+            "latt_long": "45.759392,4.828980"
+          },
+          {
+            "title": "Marseille",
+            "location_type": "City",
+            "woeid": 610264,
+            "latt_long": "43.293701,5.372470"
+          },
+          {
+            "title": "Nice",
+            "location_type": "City",
+            "woeid": 614274,
+            "latt_long": "43.701530,7.278240"
+          },
+          {
+            "title": "Paris",
+            "location_type": "City",
+            "woeid": 615702,
+            "latt_long": "48.856930,2.341200"
+          },
+          {
+            "title": "Toulouse",
+            "location_type": "City",
+            "woeid": 628886,
+            "latt_long": "43.605728,1.448690"
+          }
+        ]
+      },
+      {
+        "title": "Germany",
+        "location_type": "Country",
+        "woeid": 23424829,
+        "latt_long": "51.164181,10.454150",
+        "children": [
+          {
+            "title": "Berlin",
+            "location_type": "City",
+            "woeid": 638242,
+            "latt_long": "52.516071,13.376980"
+          },
+          {
+            "title": "Bremen",
+            "location_type": "City",
+            "woeid": 641142,
+            "latt_long": "53.075089,8.8047"
+          },
+          {
+            "title": "Cologne",
+            "location_type": "City",
+            "woeid": 667931,
+            "latt_long": "50.941662,6.955180"
+          },
+          {
+            "title": "Dortmund",
+            "location_type": "City",
+            "woeid": 645458,
+            "latt_long": "51.516609,7.458290"
+          },
+          {
+            "title": "Dresden",
+            "location_type": "City",
+            "woeid": 645686,
+            "latt_long": "51.053631,13.74081"
+          },
+          {
+            "title": "D\u00fcsseldorf",
+            "location_type": "City",
+            "woeid": 646099,
+            "latt_long": "51.215630,6.776040"
+          },
+          {
+            "title": "Essen",
+            "location_type": "City",
+            "woeid": 648820,
+            "latt_long": "51.451809,7.0106"
+          },
+          {
+            "title": "Frankfurt",
+            "location_type": "City",
+            "woeid": 650272,
+            "latt_long": "50.112080,8.683410"
+          },
+          {
+            "title": "Hamburg",
+            "location_type": "City",
+            "woeid": 656958,
+            "latt_long": "53.553341,9.992450"
+          },
+          {
+            "title": "Hanover",
+            "location_type": "City",
+            "woeid": 657169,
+            "latt_long": "52.372269,9.73815"
+          },
+          {
+            "title": "Leipzig",
+            "location_type": "City",
+            "woeid": 671072,
+            "latt_long": "51.3452,12.38594"
+          },
+          {
+            "title": "Munich",
+            "location_type": "City",
+            "woeid": 676757,
+            "latt_long": "48.136410,11.577530"
+          },
+          {
+            "title": "Nuremberg",
+            "location_type": "City",
+            "woeid": 680564,
+            "latt_long": "49.454342,11.07349"
+          },
+          {
+            "title": "Stuttgart",
+            "location_type": "City",
+            "woeid": 698064,
+            "latt_long": "48.767670,9.171920"
+          }
+        ]
+      },
+      {
+        "title": "Greece",
+        "location_type": "Country",
+        "woeid": 23424833,
+        "latt_long": "39.072449,21.845560",
+        "children": [
+          {
+            "title": "Athens",
+            "location_type": "City",
+            "woeid": 946738,
+            "latt_long": "37.976151,23.736410"
+          },
+          {
+            "title": "Santorini",
+            "location_type": "City",
+            "woeid": 56558361,
+            "latt_long": "36.406651,25.456530"
+          }
+        ]
+      },
+      {
+        "title": "Hungary",
+        "location_type": "Country",
+        "woeid": 23424844,
+        "latt_long": "47.161160,19.504959",
+        "children": [
+          {
+            "title": "Budapest",
+            "location_type": "City",
+            "woeid": 804365,
+            "latt_long": "47.506222,19.064819"
+          }
+        ]
+      },
+      {
+        "title": "Iceland",
+        "location_type": "Country",
+        "woeid": 23424845,
+        "latt_long": "64.963943,-19.021160",
+        "children": [
+          {
+            "title": "Reykjav\u00edk",
+            "location_type": "City",
+            "woeid": 980389,
+            "latt_long": "64.137383,-21.902479"
+          }
+        ]
+      },
+      {
+        "title": "Ireland",
+        "location_type": "Country",
+        "woeid": 23424803,
+        "latt_long": "53.419609,-8.240550",
+        "children": [
+          {
+            "title": "Dublin",
+            "location_type": "City",
+            "woeid": 560743,
+            "latt_long": "53.343761,-6.249530"
+          }
+        ]
+      },
+      {
+        "title": "Italy",
+        "location_type": "Country",
+        "woeid": 23424853,
+        "latt_long": "42.503819,12.573470",
+        "children": [
+          {
+            "title": "Milan",
+            "location_type": "City",
+            "woeid": 718345,
+            "latt_long": "45.468941,9.181030"
+          },
+          {
+            "title": "Naples",
+            "location_type": "City",
+            "woeid": 719258,
+            "latt_long": "40.852268,14.238990"
+          },
+          {
+            "title": "Rome",
+            "location_type": "City",
+            "woeid": 721943,
+            "latt_long": "41.903111,12.495760"
+          },
+          {
+            "title": "Torino",
+            "location_type": "City",
+            "woeid": 725003,
+            "latt_long": "45.070290,7.667680"
+          },
+          {
+            "title": "Venice",
+            "location_type": "City",
+            "woeid": 725746,
+            "latt_long": "45.437012,12.33711"
+          }
+        ]
+      },
+      {
+        "title": "Netherlands",
+        "location_type": "Country",
+        "woeid": 23424909,
+        "latt_long": "52.108200,5.329860",
+        "children": [
+          {
+            "title": "Amsterdam",
+            "location_type": "City",
+            "woeid": 727232,
+            "latt_long": "52.373119,4.893190"
+          },
+          {
+            "title": "The Hague",
+            "location_type": "City",
+            "woeid": 726874,
+            "latt_long": "52.083988,4.31741"
+          }
+        ]
+      },
+      {
+        "title": "Norway",
+        "location_type": "Country",
+        "woeid": 23424910,
+        "latt_long": "64.556534,12.666170",
+        "children": [
+          {
+            "title": "Oslo",
+            "location_type": "City",
+            "woeid": 862592,
+            "latt_long": "59.912281,10.749980"
+          }
+        ]
+      },
+      {
+        "title": "Poland",
+        "location_type": "Country",
+        "woeid": 23424923,
+        "latt_long": "51.918919,19.134300",
+        "children": [
+          {
+            "title": "Warsaw",
+            "location_type": "City",
+            "woeid": 523920,
+            "latt_long": "52.235352,21.009390"
+          }
+        ]
+      },
+      {
+        "title": "Portugal",
+        "location_type": "Country",
+        "woeid": 23424925,
+        "latt_long": "39.557919,-7.844810",
+        "children": [
+          {
+            "title": "Lisbon",
+            "location_type": "City",
+            "woeid": 742676,
+            "latt_long": "38.725670,-9.150370"
+          }
+        ]
+      },
+      {
+        "title": "Romania",
+        "location_type": "Country",
+        "woeid": 23424933,
+        "latt_long": "45.946949,24.980400",
+        "children": [
+          {
+            "title": "Bucharest",
+            "location_type": "City",
+            "woeid": 868274,
+            "latt_long": "44.434200,26.102970"
+          }
+        ]
+      },
+      {
+        "title": "Russia",
+        "location_type": "Country",
+        "woeid": 23424936,
+        "latt_long": "59.453751,108.830719",
+        "children": [
+          {
+            "title": "Moscow",
+            "location_type": "City",
+            "woeid": 2122265,
+            "latt_long": "55.756950,37.614971"
+          },
+          {
+            "title": "St Petersburg",
+            "location_type": "City",
+            "woeid": 2123260,
+            "latt_long": "59.932739,30.306721"
+          }
+        ]
+      },
+      {
+        "title": "Spain",
+        "location_type": "Country",
+        "woeid": 23424950,
+        "latt_long": "39.894890,-2.988310",
+        "children": [
+          {
+            "title": "Barcelona",
+            "location_type": "City",
+            "woeid": 753692,
+            "latt_long": "41.385578,2.168740"
+          },
+          {
+            "title": "Madrid",
+            "location_type": "City",
+            "woeid": 766273,
+            "latt_long": "40.420300,-3.705770"
+          },
+          {
+            "title": "Santa Cruz de Tenerife",
+            "location_type": "City",
+            "woeid": 773692,
+            "latt_long": "28.46163,-16.267059"
+          },
+          {
+            "title": "Santander",
+            "location_type": "City",
+            "woeid": 773964,
+            "latt_long": "43.461498,-3.810010"
+          }
+        ]
+      },
+      {
+        "title": "Sweden",
+        "location_type": "Country",
+        "woeid": 23424954,
+        "latt_long": "62.198448,17.551420",
+        "children": [
+          {
+            "title": "Gothenburg",
+            "location_type": "City",
+            "woeid": 890869,
+            "latt_long": "57.701328,11.96689"
+          },
+          {
+            "title": "Stockholm",
+            "location_type": "City",
+            "woeid": 906057,
+            "latt_long": "59.332169,18.062429"
+          }
+        ]
+      },
+      {
+        "title": "Switzerland",
+        "location_type": "Country",
+        "woeid": 23424957,
+        "latt_long": "46.813202,8.223950",
+        "children": [
+          {
+            "title": "Geneva",
+            "location_type": "City",
+            "woeid": 782538,
+            "latt_long": "46.208351,6.142700"
+          },
+          {
+            "title": "Zurich",
+            "location_type": "City",
+            "woeid": 784794,
+            "latt_long": "47.377060,8.539550"
+          }
+        ]
+      },
+      {
+        "title": "Ukraine",
+        "location_type": "Country",
+        "woeid": 23424976,
+        "latt_long": "48.382881,31.173441",
+        "children": [
+          {
+            "title": "Kharkiv",
+            "location_type": "City",
+            "woeid": 922137,
+            "latt_long": "49.990101,36.230301"
+          },
+          {
+            "title": "Kiev",
+            "location_type": "City",
+            "woeid": 924938,
+            "latt_long": "50.441380,30.522490"
+          }
+        ]
+      },
+      {
+        "title": "United Kingdom",
+        "location_type": "Country",
+        "woeid": 23424975,
+        "latt_long": "55.008391,-5.822485",
+        "children": [
+          {
+            "title": "England",
+            "location_type": "Region / State / Province",
+            "woeid": 24554868,
+            "latt_long": "52.883560,-1.974060",
+            "children": [
+              {
+                "title": "Birmingham",
+                "location_type": "City",
+                "woeid": 12723,
+                "latt_long": "52.478630,-1.908450"
+              },
+              {
+                "title": "Blackpool",
+                "location_type": "City",
+                "woeid": 12903,
+                "latt_long": "53.825069,-3.020750"
+              },
+              {
+                "title": "Bournemouth",
+                "location_type": "City",
+                "woeid": 13383,
+                "latt_long": "50.720402,-1.880910"
+              },
+              {
+                "title": "Bradford",
+                "location_type": "City",
+                "woeid": 13527,
+                "latt_long": "53.795731,-1.758300"
+              },
+              {
+                "title": "Brighton",
+                "location_type": "City",
+                "woeid": 13911,
+                "latt_long": "50.828869,-0.134140"
+              },
+              {
+                "title": "Bristol",
+                "location_type": "City",
+                "woeid": 13963,
+                "latt_long": "51.453732,-2.591560"
+              },
+              {
+                "title": "Cambridge",
+                "location_type": "City",
+                "woeid": 14979,
+                "latt_long": "52.209702,0.111420"
+              },
+              {
+                "title": "Coventry",
+                "location_type": "City",
+                "woeid": 17044,
+                "latt_long": "52.406979,-1.507760"
+              },
+              {
+                "title": "Derby",
+                "location_type": "City",
+                "woeid": 18114,
+                "latt_long": "52.914120,-1.469970"
+              },
+              {
+                "title": "Exeter",
+                "location_type": "City",
+                "woeid": 19792,
+                "latt_long": "50.720760,-3.515340"
+              },
+              {
+                "title": "Falmouth",
+                "location_type": "City",
+                "woeid": 19894,
+                "latt_long": "50.151001,-5.07832"
+              },
+              {
+                "title": "Huddersfield",
+                "location_type": "City",
+                "woeid": 24083,
+                "latt_long": "53.648998,-1.791790"
+              },
+              {
+                "title": "Ipswich",
+                "location_type": "City",
+                "woeid": 24522,
+                "latt_long": "52.054138,1.159280"
+              },
+              {
+                "title": "Kingston upon Hull",
+                "location_type": "City",
+                "woeid": 25211,
+                "latt_long": "53.743198,-0.345850"
+              },
+              {
+                "title": "Leeds",
+                "location_type": "City",
+                "woeid": 26042,
+                "latt_long": "53.794491,-1.546580"
+              },
+              {
+                "title": "Leicester",
+                "location_type": "City",
+                "woeid": 26062,
+                "latt_long": "52.637981,-1.140430"
+              },
+              {
+                "title": "Liverpool",
+                "location_type": "City",
+                "woeid": 26734,
+                "latt_long": "53.409771,-2.978480"
+              },
+              {
+                "title": "London",
+                "location_type": "City",
+                "woeid": 44418,
+                "latt_long": "51.506321,-0.12714"
+              },
+              {
+                "title": "Luton",
+                "location_type": "City",
+                "woeid": 27997,
+                "latt_long": "51.894932,-0.428090"
+              },
+              {
+                "title": "Manchester",
+                "location_type": "City",
+                "woeid": 28218,
+                "latt_long": "53.479599,-2.248810"
+              },
+              {
+                "title": "Middlesbrough",
+                "location_type": "City",
+                "woeid": 28869,
+                "latt_long": "54.573051,-1.237630"
+              },
+              {
+                "title": "Newcastle",
+                "location_type": "City",
+                "woeid": 30079,
+                "latt_long": "54.977940,-1.611620"
+              },
+              {
+                "title": "Northampton",
+                "location_type": "City",
+                "woeid": 30599,
+                "latt_long": "52.244869,-0.886160"
+              },
+              {
+                "title": "Norwich",
+                "location_type": "City",
+                "woeid": 30704,
+                "latt_long": "52.635349,1.280070"
+              },
+              {
+                "title": "Nottingham",
+                "location_type": "City",
+                "woeid": 30720,
+                "latt_long": "52.949219,-1.143920"
+              },
+              {
+                "title": "Oxford",
+                "location_type": "City",
+                "woeid": 31278,
+                "latt_long": "51.756199,-1.259490"
+              },
+              {
+                "title": "Penzance",
+                "location_type": "City",
+                "woeid": 31889,
+                "latt_long": "50.11861,-5.53723"
+              },
+              {
+                "title": "Plymouth",
+                "location_type": "City",
+                "woeid": 32185,
+                "latt_long": "50.375801,-4.136890"
+              },
+              {
+                "title": "Portsmouth",
+                "location_type": "City",
+                "woeid": 32452,
+                "latt_long": "50.804008,-1.087280"
+              },
+              {
+                "title": "Preston",
+                "location_type": "City",
+                "woeid": 32566,
+                "latt_long": "53.774281,-2.707900"
+              },
+              {
+                "title": "Reading",
+                "location_type": "City",
+                "woeid": 32997,
+                "latt_long": "51.452381,-0.996030"
+              },
+              {
+                "title": "Salford",
+                "location_type": "City",
+                "woeid": 33887,
+                "latt_long": "53.489731,-2.2843"
+              },
+              {
+                "title": "Sheffield",
+                "location_type": "City",
+                "woeid": 34503,
+                "latt_long": "53.383110,-1.464540"
+              },
+              {
+                "title": "Southend-on-Sea",
+                "location_type": "City",
+                "woeid": 35375,
+                "latt_long": "51.548328,0.706400"
+              },
+              {
+                "title": "St Ives",
+                "location_type": "City",
+                "woeid": 35662,
+                "latt_long": "50.21032,-5.48569"
+              },
+              {
+                "title": "Stoke-on-Trent",
+                "location_type": "City",
+                "woeid": 36240,
+                "latt_long": "53.018581,-2.16596"
+              },
+              {
+                "title": "Sunderland",
+                "location_type": "City",
+                "woeid": 36615,
+                "latt_long": "54.900120,-1.408480"
+              },
+              {
+                "title": "Swindon",
+                "location_type": "City",
+                "woeid": 36796,
+                "latt_long": "51.570969,-1.784020"
+              },
+              {
+                "title": "Truro",
+                "location_type": "City",
+                "woeid": 38283,
+                "latt_long": "50.263691,-5.054610"
+              },
+              {
+                "title": "Wakefield",
+                "location_type": "City",
+                "woeid": 38952,
+                "latt_long": "53.677631,-1.509510"
+              },
+              {
+                "title": "Wolverhampton",
+                "location_type": "City",
+                "woeid": 40859,
+                "latt_long": "52.588638,-2.12168"
+              },
+              {
+                "title": "York",
+                "location_type": "City",
+                "woeid": 41415,
+                "latt_long": "53.96196,-1.09045"
+              }
+            ]
+          },
+          {
+            "title": "Northern Ireland",
+            "location_type": "Region / State / Province",
+            "woeid": 20070563,
+            "latt_long": "54.636509,-6.812860",
+            "children": [
+              {
+                "title": "Belfast",
+                "location_type": "City",
+                "woeid": 44544,
+                "latt_long": "54.595291,-5.934520"
+              }
+            ]
+          },
+          {
+            "title": "Scotland",
+            "location_type": "Region / State / Province",
+            "woeid": 12578048,
+            "latt_long": "56.652859,-3.996670",
+            "children": [
+              {
+                "title": "Aberdeen",
+                "location_type": "City",
+                "woeid": 10243,
+                "latt_long": "57.153820,-2.106790"
+              },
+              {
+                "title": "Dundee",
+                "location_type": "City",
+                "woeid": 18637,
+                "latt_long": "56.475761,-2.9756"
+              },
+              {
+                "title": "Edinburgh",
+                "location_type": "City",
+                "woeid": 19344,
+                "latt_long": "55.954151,-3.202770"
+              },
+              {
+                "title": "Glasgow",
+                "location_type": "City",
+                "woeid": 21125,
+                "latt_long": "55.857800,-4.242510"
+              },
+              {
+                "title": "Kirkwall",
+                "location_type": "City",
+                "woeid": 25462,
+                "latt_long": "58.981731,-2.96042"
+              }
+            ]
+          },
+          {
+            "title": "Wales",
+            "location_type": "Region / State / Province",
+            "woeid": 12578049,
+            "latt_long": "52.404449,-3.985120",
+            "children": [
+              {
+                "title": "Cardiff",
+                "location_type": "City",
+                "woeid": 15127,
+                "latt_long": "51.481251,-3.180730"
+              },
+              {
+                "title": "Rhyl",
+                "location_type": "City",
+                "woeid": 33267,
+                "latt_long": "53.311581,-3.47234"
+              },
+              {
+                "title": "Swansea",
+                "location_type": "City",
+                "woeid": 36758,
+                "latt_long": "51.623150,-3.940930"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "title": "Europe",
+    "location_type": "Continent",
+    "woeid": 24865675,
+    "latt_long": "52.976181,7.857840"
+  },
+  "South America": {
+    "children": [
+      {
+        "title": "Argentina",
+        "location_type": "Country",
+        "woeid": 23424747,
+        "latt_long": "-37.09,-63.58",
+        "children": [
+          {
+            "title": "Buenos Aires",
+            "location_type": "City",
+            "woeid": 468739,
+            "latt_long": "-34.608521,-58.373539"
+          }
+        ]
+      },
+      {
+        "title": "Brazil",
+        "location_type": "Country",
+        "woeid": 23424768,
+        "latt_long": "-14.242920,-54.387829",
+        "children": [
+          {
+            "title": "Bras\u00edlia",
+            "location_type": "City",
+            "woeid": 455819,
+            "latt_long": "-15.77846,-47.928661"
+          },
+          {
+            "title": "Rio de Janeiro",
+            "location_type": "City",
+            "woeid": 455825,
+            "latt_long": "-22.976730,-43.195080"
+          },
+          {
+            "title": "Salvador",
+            "location_type": "City",
+            "woeid": 455826,
+            "latt_long": "-12.97002,-38.504559"
+          },
+          {
+            "title": "S\u00e3o Paulo",
+            "location_type": "City",
+            "woeid": 455827,
+            "latt_long": "-23.562880,-46.654659"
+          }
+        ]
+      },
+      {
+        "title": "Chile",
+        "location_type": "Country",
+        "woeid": 23424782,
+        "latt_long": "-35.705219,-71.341087",
+        "children": [
+          {
+            "title": "Santiago",
+            "location_type": "City",
+            "woeid": 349859,
+            "latt_long": "-33.463039,-70.647942"
+          }
+        ]
+      },
+      {
+        "title": "Colombia",
+        "location_type": "Country",
+        "woeid": 23424787,
+        "latt_long": "4.116410,-72.958527",
+        "children": [
+          {
+            "title": "Bogot\u00e1",
+            "location_type": "City",
+            "woeid": 368148,
+            "latt_long": "4.656370,-74.117790"
+          }
+        ]
+      },
+      {
+        "title": "Peru",
+        "location_type": "Country",
+        "woeid": 23424919,
+        "latt_long": "-9.181340,-75.002357",
+        "children": [
+          {
+            "title": "Lima",
+            "location_type": "City",
+            "woeid": 418440,
+            "latt_long": "-12.043600,-77.021217"
+          }
+        ]
+      },
+      {
+        "title": "Venezuela",
+        "location_type": "Country",
+        "woeid": 23424982,
+        "latt_long": "6.472790,-66.589043",
+        "children": [
+          {
+            "title": "Caracas",
+            "location_type": "City",
+            "woeid": 395269,
+            "latt_long": "10.496050,-66.898277"
+          },
+          {
+            "title": "Maracaibo",
+            "location_type": "City",
+            "woeid": 395270,
+            "latt_long": "10.734450,-71.630562"
+          }
+        ]
+      }
+    ],
+    "title": "South America",
+    "location_type": "Continent",
+    "woeid": 24865673,
+    "latt_long": "-23.030081,-67.903702"
+  },
+  "Australia": {
+    "title": "Australia",
+    "location_type": "Continent",
+    "woeid": 23424748,
+    "latt_long": "-24.912100,133.397552",
+    "children": [
+  {"Australia": {
+    "children": [
+      {
+        "title": "Adelaide",
+        "location_type": "City",
+        "woeid": 1099805,
+        "latt_long": "-34.926102,138.599884"
+      },
+      {
+        "title": "Brisbane",
+        "location_type": "City",
+        "woeid": 1100661,
+        "latt_long": "-27.468880,153.022827"
+      },
+      {
+        "title": "Melbourne",
+        "location_type": "City",
+        "woeid": 1103816,
+        "latt_long": "-37.817532,144.967148"
+      },
+      {
+        "title": "Perth",
+        "location_type": "City",
+        "woeid": 1098081,
+        "latt_long": "-31.953020,115.857239"
+      },
+      {
+        "title": "Sydney",
+        "location_type": "City",
+        "woeid": 1105779,
+        "latt_long": "-33.869629, 151.206955"
+      }
+    ]},
+    "title": "Australia",
+    "location_type": "Country",
+    "woeid": 23424748,
+    "latt_long": "-24.912100,133.397552"
+  }
+    ]
+  }
+}
