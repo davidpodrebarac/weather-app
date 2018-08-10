@@ -43,3 +43,4 @@ public class City extends LocationData {
 	}
 
 }
+

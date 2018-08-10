@@ -1,63 +1,80 @@
 package apis.weatherapp.metaweather.executor;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.*;
+
+import javax.persistence.*;
+import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonPropertyOrder({ "title", "slug", "url", "crawl_rate" })
+@JsonPropertyOrder({"title", "slug", "url", "crawl_rate"})
+@JsonIdentityInfo(generator= ObjectIdGenerators.IntSequenceGenerator.class, property="@sourceId")
+@Entity
 public class Source {
 
-	@JsonProperty("title")
-	private String title;
-	@JsonProperty("slug")
-	private String slug;
-	@JsonProperty("url")
-	private String url;
-	@JsonProperty("crawl_rate")
-	private Long crawlRate;
-	@JsonIgnore
+    @Id
+    @GeneratedValue
+    private Long id;
+    @JsonProperty("title")
+    private String title;
+    @JsonProperty("slug")
+    private String slug;
+    @JsonProperty("url")
+    @Column(unique = true)
+    private String url;
+    @JsonProperty("crawl_rate")
+    private Long crawlRate;
 
-	@JsonProperty("title")
-	public String getTitle() {
-		return title;
-	}
+    @JsonIgnore
+    @ManyToMany
+    @JoinColumn(name = "weather_info_fk")
+    private List<WeatherInfo> weatherInfos;
 
-	@JsonProperty("title")
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public List<WeatherInfo> getWeatherInfos() {
+        return weatherInfos;
+    }
 
-	@JsonProperty("slug")
-	public String getSlug() {
-		return slug;
-	}
+    public void setWeatherInfos(List<WeatherInfo> weatherInfo) {
+        this.weatherInfos = weatherInfo;
+    }
 
-	@JsonProperty("slug")
-	public void setSlug(String slug) {
-		this.slug = slug;
-	}
+    @JsonProperty("title")
+    public String getTitle() {
+        return title;
+    }
 
-	@JsonProperty("url")
-	public String getUrl() {
-		return url;
-	}
+    @JsonProperty("title")
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-	@JsonProperty("url")
-	public void setUrl(String url) {
-		this.url = url;
-	}
+    @JsonProperty("slug")
+    public String getSlug() {
+        return slug;
+    }
 
-	@JsonProperty("crawl_rate")
-	public Long getCrawlRate() {
-		return crawlRate;
-	}
+    @JsonProperty("slug")
+    public void setSlug(String slug) {
+        this.slug = slug;
+    }
 
-	@JsonProperty("crawl_rate")
-	public void setCrawlRate(Long crawlRate) {
-		this.crawlRate = crawlRate;
-	}
+    @JsonProperty("url")
+    public String getUrl() {
+        return url;
+    }
+
+    @JsonProperty("url")
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    @JsonProperty("crawl_rate")
+    public Long getCrawlRate() {
+        return crawlRate;
+    }
+
+    @JsonProperty("crawl_rate")
+    public void setCrawlRate(Long crawlRate) {
+        this.crawlRate = crawlRate;
+    }
 }
