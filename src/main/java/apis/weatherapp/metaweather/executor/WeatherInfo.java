@@ -30,7 +30,7 @@ public class WeatherInfo {
 	@JsonProperty("location_type")
 	private String locationType;
 	@JsonProperty("woeid")
-	private Integer woeid;
+	private Long woeid;
 	@JsonProperty("latt_long")
 	private String lattLong;
 	@JsonProperty("timezone")
@@ -117,12 +117,12 @@ public class WeatherInfo {
 	}
 
 	@JsonProperty("woeid")
-	public Integer getWoeid() {
+	public Long getWoeid() {
 		return woeid;
 	}
 
 	@JsonProperty("woeid")
-	public void setWoeid(Integer woeid) {
+	public void setWoeid(Long woeid) {
 		this.woeid = woeid;
 	}
 

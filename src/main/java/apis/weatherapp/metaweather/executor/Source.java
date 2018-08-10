@@ -18,7 +18,7 @@ public class Source {
 	@JsonProperty("url")
 	private String url;
 	@JsonProperty("crawl_rate")
-	private Integer crawlRate;
+	private Long crawlRate;
 	@JsonIgnore
 
 	@JsonProperty("title")
@@ -52,12 +52,12 @@ public class Source {
 	}
 
 	@JsonProperty("crawl_rate")
-	public Integer getCrawlRate() {
+	public Long getCrawlRate() {
 		return crawlRate;
 	}
 
 	@JsonProperty("crawl_rate")
-	public void setCrawlRate(Integer crawlRate) {
+	public void setCrawlRate(Long crawlRate) {
 		this.crawlRate = crawlRate;
 	}
 }

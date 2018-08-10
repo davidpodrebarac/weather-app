@@ -8,13 +8,14 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.*;
 
 import apis.weatherapp.metaweather.LocationData;
 import apis.weatherapp.metaweather.city.subscription.CitySubscription;
 import apis.weatherapp.metaweather.country.Country;
 
 @Entity
+@JsonIdentityInfo(generator= ObjectIdGenerators.IntSequenceGenerator.class, property="@cityId")
 public class City extends LocationData {
 	@Id
 	@GeneratedValue
