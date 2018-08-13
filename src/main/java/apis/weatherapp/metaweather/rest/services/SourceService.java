@@ -1,5 +1,7 @@
-package apis.weatherapp.metaweather.executor;
+package apis.weatherapp.metaweather.rest.services;
 
+import apis.weatherapp.metaweather.rest.daos.SourceDAO;
+import apis.weatherapp.metaweather.rest.models.Source;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

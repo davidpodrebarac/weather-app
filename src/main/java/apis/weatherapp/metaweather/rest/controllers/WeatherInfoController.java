@@ -1,5 +1,7 @@
-package apis.weatherapp.metaweather.executor;
+package apis.weatherapp.metaweather.rest.controllers;
 
+import apis.weatherapp.metaweather.rest.models.SubscriptionWeatherInfo;
+import apis.weatherapp.metaweather.rest.services.WeatherInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

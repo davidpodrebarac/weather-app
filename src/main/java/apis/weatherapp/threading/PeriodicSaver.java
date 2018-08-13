@@ -1,13 +1,11 @@
 package apis.weatherapp.threading;
 
-import apis.weatherapp.metaweather.executor.SubscriptionWeatherInfo;
-import apis.weatherapp.metaweather.executor.WeatherInfoService;
+import apis.weatherapp.metaweather.rest.models.SubscriptionWeatherInfo;
+import apis.weatherapp.metaweather.rest.services.WeatherInfoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

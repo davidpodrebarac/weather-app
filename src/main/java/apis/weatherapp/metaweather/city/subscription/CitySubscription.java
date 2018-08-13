@@ -1,11 +1,9 @@
 package apis.weatherapp.metaweather.city.subscription;
 
 import apis.weatherapp.metaweather.city.City;
-import apis.weatherapp.metaweather.executor.SubscriptionWeatherInfo;
+import apis.weatherapp.metaweather.rest.models.SubscriptionWeatherInfo;
 import apis.weatherapp.security.model.User;
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;

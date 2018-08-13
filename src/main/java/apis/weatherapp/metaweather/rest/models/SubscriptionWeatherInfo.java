@@ -1,4 +1,4 @@
-package apis.weatherapp.metaweather.executor;
+package apis.weatherapp.metaweather.rest.models;
 
 import apis.weatherapp.metaweather.city.subscription.CitySubscription;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;

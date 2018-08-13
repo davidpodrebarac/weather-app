@@ -1,4 +1,4 @@
-package apis.weatherapp.metaweather.executor;
+package apis.weatherapp.metaweather.rest.models;
 
 import java.util.List;
 

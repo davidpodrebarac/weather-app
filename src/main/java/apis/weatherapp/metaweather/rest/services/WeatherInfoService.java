@@ -1,7 +1,11 @@
-package apis.weatherapp.metaweather.executor;
+package apis.weatherapp.metaweather.rest.services;
 
 import apis.weatherapp.metaweather.city.subscription.CitySubscription;
 import apis.weatherapp.metaweather.city.subscription.CitySubscriptionService;
+import apis.weatherapp.metaweather.rest.controllers.WeatherInfoController;
+import apis.weatherapp.metaweather.rest.models.Source;
+import apis.weatherapp.metaweather.rest.models.SubscriptionWeatherInfo;
+import apis.weatherapp.metaweather.rest.models.WeatherInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
