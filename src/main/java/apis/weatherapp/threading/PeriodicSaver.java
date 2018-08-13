@@ -30,11 +30,6 @@ public class PeriodicSaver extends Thread {
         this.start();
     }
 
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer propertyConfigInDev() {
-        return new PropertySourcesPlaceholderConfigurer();
-    }
-
     @Override
     public void run() {
         long sleepTime = Long.valueOf(this.sleepTime) * 1000;
@@ -44,8 +39,8 @@ public class PeriodicSaver extends Thread {
                 LOGGER.info("Fetching new weather infos");
                 long start = System.currentTimeMillis();
                 List<SubscriptionWeatherInfo> weatherInfoList = this.wiService.getWeatherInfoForSubscriptions();
-                float total = (System.currentTimeMillis() - start) * 1000;
-                LOGGER.info("Fetched %d new weather infos in %.2fs.", weatherInfoList.size(), total);
+                float total = (float) ((System.currentTimeMillis() - start) / 10e3);
+                LOGGER.info("Fetched {} new weather infos in {}s", weatherInfoList.size(), String.format("%.2f", total));
                 this.pausePoint();
             } catch (InterruptedException e) {
                 e.printStackTrace();

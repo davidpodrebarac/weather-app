@@ -35,7 +35,7 @@ public class WeatherInfoService {
             RestTemplate restTemplate = new RestTemplate();
             CitySubscription s = subscriptions.get(i);
             String url = URL + s.getCity().getWoeid();
-            LOGGER.info("url za povezivanje je {}", url);
+//            LOGGER.info("url za povezivanje je {}", url);
             WeatherInfo w = restTemplate.getForObject(url, WeatherInfo.class);
             w.getConsolidatedWeather().forEach(cw -> cw.setWeatherInfo(w));
 
