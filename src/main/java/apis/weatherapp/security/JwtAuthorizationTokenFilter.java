@@ -1,6 +1,7 @@
 package apis.weatherapp.security;
 
 import java.io.IOException;
+import java.util.Map;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -36,12 +37,13 @@ public class JwtAuthorizationTokenFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws ServletException, IOException {
         logger.debug("processing authentication for '{}'", request.getRequestURL());
-
         final String requestHeader = request.getHeader(this.tokenHeader);
 
-        String username = null;
-        String authToken = null;
-        if (requestHeader != null && requestHeader.startsWith("Bearer ")) {
+        Map<String, String> map = jwtTokenUtil.getUserAndTokenFromCookies(request.getCookies());
+        String username = map.get("username");
+        String authToken = map.get("token");
+
+        if (requestHeader != null && requestHeader.startsWith("Bearer ") && authToken != null) {
             authToken = requestHeader.substring(7);
             try {
                 username = jwtTokenUtil.getUsernameFromToken(authToken);

@@ -2,7 +2,9 @@ package apis.weatherapp.security.controller;
 
 import java.util.Objects;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -43,7 +45,7 @@ public class AuthenticationRestController {
     private UserDetailsService userDetailsService;
 
     @RequestMapping(value = "${jwt.route.authentication.path}", method = RequestMethod.POST)
-    public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtAuthenticationRequest authenticationRequest) throws AuthenticationException {
+    public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtAuthenticationRequest authenticationRequest, HttpServletResponse response) throws AuthenticationException {
 
         authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 
@@ -51,16 +53,19 @@ public class AuthenticationRestController {
         final UserDetails userDetails = userDetailsService.loadUserByUsername(authenticationRequest.getUsername());
         final String token = jwtTokenUtil.generateToken(userDetails);
 
-        // Return the token
-        return ResponseEntity.ok(new JwtAuthenticationResponse(token));
+        addJwtToCookie(response, token);
+        ResponseEntity entity = ResponseEntity.ok(new JwtAuthenticationResponse(token));
+        return entity;
     }
 
     @RequestMapping(value = "${jwt.route.authentication.refresh}", method = RequestMethod.GET)
-    public ResponseEntity<?> refreshAndGetAuthenticationToken(HttpServletRequest request) {
+    public ResponseEntity<?> refreshAndGetAuthenticationToken(HttpServletRequest request, HttpServletResponse response) {
         String authToken = request.getHeader(tokenHeader);
         final String token = authToken.substring(7);
         String username = jwtTokenUtil.getUsernameFromToken(token);
         JwtUser user = (JwtUser) userDetailsService.loadUserByUsername(username);
+
+        addJwtToCookie(response, authToken);
 
         if (jwtTokenUtil.canTokenBeRefreshed(token, user.getLastPasswordResetDate())) {
             String refreshedToken = jwtTokenUtil.refreshToken(token);
@@ -68,6 +73,15 @@ public class AuthenticationRestController {
         } else {
             return ResponseEntity.badRequest().body(null);
         }
+    }
+
+    private void addJwtToCookie(HttpServletResponse response, String token) {
+        final Cookie cookie = new Cookie("jwt_token", token);
+        cookie.setPath("/");
+        //TODO
+//        cookie.setSecure(true);
+//        cookie.setHttpOnly(true);
+        response.addCookie(cookie);
     }
 
     @ExceptionHandler({AuthenticationException.class})

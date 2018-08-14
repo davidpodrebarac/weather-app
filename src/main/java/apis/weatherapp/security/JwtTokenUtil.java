@@ -15,6 +15,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.Cookie;
+
 @Component
 public class JwtTokenUtil implements Serializable {
 
@@ -48,9 +50,9 @@ public class JwtTokenUtil implements Serializable {
 
     private Claims getAllClaimsFromToken(String token) {
         return Jwts.parser()
-            .setSigningKey(secret)
-            .parseClaimsJws(token)
-            .getBody();
+                .setSigningKey(secret)
+                .parseClaimsJws(token)
+                .getBody();
     }
 
     private Boolean isTokenExpired(String token) {
@@ -77,18 +79,18 @@ public class JwtTokenUtil implements Serializable {
         final Date expirationDate = calculateExpirationDate(createdDate);
 
         return Jwts.builder()
-            .setClaims(claims)
-            .setSubject(subject)
-            .setIssuedAt(createdDate)
-            .setExpiration(expirationDate)
-            .signWith(SignatureAlgorithm.HS512, secret)
-            .compact();
+                .setClaims(claims)
+                .setSubject(subject)
+                .setIssuedAt(createdDate)
+                .setExpiration(expirationDate)
+                .signWith(SignatureAlgorithm.HS512, secret)
+                .compact();
     }
 
     public Boolean canTokenBeRefreshed(String token, Date lastPasswordReset) {
         final Date created = getIssuedAtDateFromToken(token);
         return !isCreatedBeforeLastPasswordReset(created, lastPasswordReset)
-            && (!isTokenExpired(token) || ignoreTokenExpiration(token));
+                && (!isTokenExpired(token) || ignoreTokenExpiration(token));
     }
 
     public String refreshToken(String token) {
@@ -100,9 +102,9 @@ public class JwtTokenUtil implements Serializable {
         claims.setExpiration(expirationDate);
 
         return Jwts.builder()
-            .setClaims(claims)
-            .signWith(SignatureAlgorithm.HS512, secret)
-            .compact();
+                .setClaims(claims)
+                .signWith(SignatureAlgorithm.HS512, secret)
+                .compact();
     }
 
     public Boolean validateToken(String token, UserDetails userDetails) {
@@ -111,10 +113,27 @@ public class JwtTokenUtil implements Serializable {
         final Date created = getIssuedAtDateFromToken(token);
         //final Date expiration = getExpirationDateFromToken(token);
         return (
-            username.equals(user.getUsername())
-                && !isTokenExpired(token)
-                && !isCreatedBeforeLastPasswordReset(created, user.getLastPasswordResetDate())
+                username.equals(user.getUsername())
+                        && !isTokenExpired(token)
+                        && !isCreatedBeforeLastPasswordReset(created, user.getLastPasswordResetDate())
         );
+    }
+
+    public Map<String, String> getUserAndTokenFromCookies(Cookie[] cookies) {
+        String authToken = null, username = null;
+        Map<String, String> map = new HashMap<>();
+        if (cookies != null) {
+            for (Cookie c :
+                    cookies) {
+                if (c.getName().equals("jwt_token")) {
+                    authToken = c.getValue();
+                    username = this.getUsernameFromToken(authToken);
+                }
+            }
+        }
+        map.put("token", authToken);
+        map.put("username", username);
+        return map;
     }
 
     private Date calculateExpirationDate(Date createdDate) {
