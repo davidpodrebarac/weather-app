@@ -28,8 +28,14 @@ public class SaverServer implements Runnable {
     private String startRegex;
     @Value("${refresher.end-regex}")
     private String endRegex;
-    private Thread runner;
+    @Value("${refresher.receiving-mail}")
+    private String receivingMail;
+    @Value("${refresher.send-notifications}")
+    private Boolean sendNotificationsFlag;
+    @Autowired
+    private NotificationService notificationService;
 
+    private Thread runner;
     private Pattern startPatter;
     private Pattern endPatter;
 
@@ -75,6 +81,9 @@ public class SaverServer implements Runnable {
                     }
                     LOGGER.info("Writing '" + outputLine + "' to socket.");
                     out.println(outputLine);
+                    if (!outputLine.startsWith("Invalid input!") && sendNotificationsFlag) {
+                        notificationService.sendThreadNotification(this.receivingMail, outputLine);
+                    }
                 }
             } catch (IOException e) {
                 LOGGER.error("Exception caught when trying to listen on port " + port + " or listening for a connection");
