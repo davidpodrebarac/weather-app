@@ -18,10 +18,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Component
-public class SaverServer implements Runnable {
+public class ThreadController implements Runnable {
     private static final Logger LOGGER = LoggerFactory.getLogger(WeatherInfoController.class);
     @Autowired
-    private PeriodicSaver periodicSaver;
+    private PeriodicSaverThread periodicSaverThread;
     @Value("${refresher.port}")
     private int port;
     @Value("${refresher.start-regex}")
@@ -67,12 +67,12 @@ public class SaverServer implements Runnable {
                     if (startMatcher.matches()) {
                         LOGGER.info("Starting saver thread, received string:'{}'.", inputLine);
                         int minutes = Integer.parseInt(startMatcher.group(2));
-                        periodicSaver.unpause();
+                        periodicSaverThread.unpause();
                         outputLine = "Server thread started.";
                     } else if (endMatcher.matches()) {
                         LOGGER.info("Stoping saver thread, received string:'{}'.", inputLine);
                         int minutes = Integer.parseInt(endMatcher.group(2));
-                        periodicSaver.pause();
+                        periodicSaverThread.pause();
                         outputLine = "Server thread paused.";
                     } else {
                         LOGGER.info("Invalid input, received:'{}'.", inputLine);

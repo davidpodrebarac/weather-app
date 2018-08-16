@@ -12,8 +12,8 @@ import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Component
-public class PeriodicSaver extends Thread {
-    private final static Logger LOGGER = LoggerFactory.getLogger(PeriodicSaver.class.getName());
+public class PeriodicSaverThread extends Thread {
+    private final static Logger LOGGER = LoggerFactory.getLogger(PeriodicSaverThread.class.getName());
 
     private boolean needToPause;
 
