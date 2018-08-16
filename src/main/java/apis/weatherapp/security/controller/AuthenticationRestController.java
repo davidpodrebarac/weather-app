@@ -78,7 +78,6 @@ public class AuthenticationRestController {
     private void addJwtToCookie(HttpServletResponse response, String token) {
         final Cookie cookie = new Cookie("jwt_token", token);
         cookie.setPath("/");
-        //TODO
 //        cookie.setSecure(true);
 //        cookie.setHttpOnly(true);
         response.addCookie(cookie);
