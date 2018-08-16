@@ -23,7 +23,5 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-saverClient/src/data/
-saverClient/src/main/resources/
-saverClient/src/test/
+
 saverClient/target/
