@@ -1,8 +1,5 @@
 package apis.weatherApp;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,7 +8,6 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class SaverClient {
-    private static final Logger LOGGER = LoggerFactory.getLogger(SaverClient.class);
 
     public static void main(String[] args) {
         if (args.length != 3) {
@@ -29,10 +25,10 @@ public class SaverClient {
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         ) {
-            LOGGER.info("Sending message '" + message + "' to server " + hostName + ":" + portNumber);
+            System.out.println("Sending message '" + message + "' to server " + hostName + ":" + portNumber);
             out.println(message);
             String response = in.readLine();
-            LOGGER.info("Received message from server: '" + response + "'");
+            System.out.println("Received message from server: '" + response + "'");
         } catch (UnknownHostException e) {
             System.err.println("Don't know about host " + hostName);
             System.exit(1);
