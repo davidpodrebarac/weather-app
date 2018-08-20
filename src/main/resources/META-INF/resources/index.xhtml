@@ -1,37 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:h="http://java.sun.com/jsf/html"
-  xmlns:p="http://primefaces.org/ui">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
-  <title>PrimeFaces Hello World Example</title>
+    <title>PrimeFaces Hello World Example</title>
+    <h:outputStylesheet name="/css/main.css"/>
 </h:head>
 
 <h:body>
-  <h:form id="helloworld-form">
+    <h2>Subscriptions</h2>
+    <p:dataTable id="userSubscriptions" var="us" value="#{citySubscriptionView.userSubscriptions}">
+        <p:column headerText="Created">
+            <h:outputText value="#{us.created}"/>
+        </p:column>
 
-    <p:panel header="PrimeFaces Hello World Example">
-      <h:panelGrid columns="2" cellpadding="4">
-        <h:outputText value="First Name: " />
-        <p:inputText id="first-name" value="#{helloWorld.firstName}" />
+        <p:column headerText="City_title">
+            <h:outputText value="#{us.city.title}"/>
+        </p:column>
+        <p:column headerText="City_woeid">
+            <h:outputText value="#{us.city.woeid}"/>
+        </p:column>
+        <p:column headerText="City_latt_long">
+            <h:outputText value="#{us.city.lattLong}"/>
+        </p:column>
 
-        <h:outputText value="Last Name: " />
-        <p:inputText id="last-name" value="#{helloWorld.lastName}" />
+        <p:column headerText="User">
+            <h:outputText value="#{us.user.username}"/>
+        </p:column>
 
-        <p:commandButton id="submit" value="Submit"
-          update="greeting-panel"
-          oncomplete="PF('greetingDialog').show()" />
-      </h:panelGrid>
-    </p:panel>
+    </p:dataTable>
+    <p:separator/>
 
-    <p:dialog header="Greeting" widgetVar="greetingDialog"
-      modal="true" resizable="false">
-      <h:panelGrid id="greeting-panel" columns="1" cellpadding="4">
-        <h:outputText value="#{helloWorld.showGreeting()}" />
-      </h:panelGrid>
-    </p:dialog>
+    <h:form>
+        <p:growl id="msgs" showDetail="true"/>
 
-  </h:form>
+        <h:panelGrid columns="2" cellpadding="5" style="width: 100%">
+            <p:panel header="Select a Location" style="margin-bottom:10px;">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <p:outputLabel for="continent" value="Continent: "/>
+                    <p:selectOneMenu id="continent" value="#{subscribeDropdownView.continent}" style="width:150px">
+                        <p:ajax listener="#{subscribeDropdownView.onContinentChange}" update="country"/>
+                        <f:selectItem itemLabel="Select Continent" itemValue="" noSelectionOption="true"/>
+                        <f:selectItems value="#{subscribeDropdownView.continents}"/>
+                    </p:selectOneMenu>
+
+                    <p:outputLabel for="country" value="Country: "/>
+                    <p:selectOneMenu id="country" value="#{subscribeDropdownView.country}" style="width:150px">
+                        <p:ajax listener="#{subscribeDropdownView.onCountryChange}" update="city"/>
+                        <f:selectItem itemLabel="Select Country" itemValue="" noSelectionOption="true"/>
+                        <f:selectItems value="#{subscribeDropdownView.countries}"/>
+                    </p:selectOneMenu>
+
+                    <p:outputLabel for="city" value="City: "/>
+                    <p:selectOneMenu id="city" value="#{subscribeDropdownView.city}" style="width:150px">
+                        <f:selectItem itemLabel="Select City" itemValue="" noSelectionOption="true"/>
+                        <f:selectItems value="#{subscribeDropdownView.cities}"/>
+                    </p:selectOneMenu>
+                </h:panelGrid>
+
+                <p:separator/>
+
+                <p:commandButton value="Subscribe" update="msgs userSubscriptions subscription continent country city"
+                                 actionListener="#{subscribeDropdownView.subscribe}" icon="ui-icon-check"/>
+            </p:panel>
+
+            <p:panel header="Select a subscription" style="margin-bottom:10px;">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <p:outputLabel for="subscription" value="Subscription: "/>
+                    <p:selectOneMenu id="subscription" value="#{unsubscribeDropdownView.city}" style="width:150px">
+                        <f:selectItem itemLabel="Select Subscription" itemValue="" noSelectionOption="true"/>
+                        <f:selectItems value="#{unsubscribeDropdownView.subscriptions}"/>
+                    </p:selectOneMenu>
+                </h:panelGrid>
+
+                <p:separator/>
+
+                <p:commandButton value="Unsubscribe" update="msgs userSubscriptions subscription"
+                                 actionListener="#{unsubscribeDropdownView.unsubscribe}" icon="ui-icon-check"/>
+            </p:panel>
+        </h:panelGrid>
+    </h:form>
+
+    <p:separator/>
+    <p:dataTable id="subscriptionWeatherInfos" var="svi" value="#{subscriptionWeatherInfoView.weatherInfos}">
+        <p:column headerText="City">
+            <h:outputText value="#{svi.citySubscription.city.title}"/>
+        </p:column>
+        <p:column headerText="Time">
+            <h:outputText value="#{svi.weatherInfo.time}"/>
+        </p:column>
+        <p:column headerText="Sunrise">
+            <h:outputText value="#{svi.weatherInfo.sunRise}"/>
+        </p:column>
+        <p:column headerText="Sunset">
+            <h:outputText value="#{svi.weatherInfo.sunSet}"/>
+        </p:column>
+        <p:column>
+            <p:dataTable id="consolidatedWeathers" var="cw" value="#{svi.weatherInfo.consolidatedWeather}">
+                <p:column headerText="Air pressure">
+                    <h:outputText value="#{cw.airPressure}"/>
+                </p:column>
+                <p:column headerText="Humidity">
+                    <h:outputText value="#{cw.humidity}"/>
+                </p:column>
+                <p:column headerText="Min temp">
+                    <h:outputText value="#{cw.minTemp}"/>
+                </p:column>
+                <p:column headerText="Max temp">
+                    <h:outputText value="#{cw.maxTemp}"/>
+                </p:column>
+                <p:column headerText="Visibility">
+                    <h:outputText value="#{cw.visibility}"/>
+                </p:column>
+            </p:dataTable>
+        </p:column>
+    </p:dataTable>
+
+    <p:separator/>
+    <h:form id="logout_form">
+        <h:commandButton action="#{login.logout}" value="Logout"/>
+    </h:form>
+
 </h:body>
 </html>

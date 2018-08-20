@@ -1,28 +1,20 @@
 package apis.weatherapp.metaweather;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.apache.commons.io.IOUtils;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot.ApplicationRunner;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
 import apis.weatherapp.metaweather.city.City;
 import apis.weatherapp.metaweather.city.CityDAO;
 import apis.weatherapp.metaweather.continent.Continent;
 import apis.weatherapp.metaweather.continent.ContinentDAO;
 import apis.weatherapp.metaweather.country.Country;
 import apis.weatherapp.metaweather.country.CountryDAO;
+import org.apache.commons.io.IOUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
+
+import java.io.*;
 
 @Component
 public class PreloadDatabaseWithWOEIDSpring implements ApplicationRunner {
@@ -53,8 +45,7 @@ public class PreloadDatabaseWithWOEIDSpring implements ApplicationRunner {
 	@Autowired
 	private ContinentDAO continentRepository;
 
-	public PreloadDatabaseWithWOEIDSpring() throws IOException {
-		System.out.println("Ucitao sam konstruktor!");
+	public PreloadDatabaseWithWOEIDSpring() {
 	}
 
 	public void loadJsonDataIntoDB() throws IOException {

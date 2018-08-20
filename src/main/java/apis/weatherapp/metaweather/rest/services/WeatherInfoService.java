@@ -27,13 +27,13 @@ public class WeatherInfoService {
     @Autowired
     private CitySubscriptionService citySubService;
     @Autowired
-    private SubsWIService subsWIService;
+    private SubscriptionWeatherInfoService subscriptionWeatherInfoService;
     @Autowired
     private SourceService sourceService;
 
     @Transactional
     public List<SubscriptionWeatherInfo> getWeatherInfoForSubscriptions() {
-        List<CitySubscription> subscriptions = citySubService.getAllSubscriptions();
+        List<CitySubscription> subscriptions = citySubService.findAll();
         List<SubscriptionWeatherInfo> results = new ArrayList<>();
         for (int i = 0; i < subscriptions.size(); i++) {
             RestTemplate restTemplate = new RestTemplate();
@@ -67,7 +67,7 @@ public class WeatherInfoService {
             w.setSources(newSources);
 
             SubscriptionWeatherInfo subscriptionWeatherInfo = new SubscriptionWeatherInfo(w, s);
-            subsWIService.add(subscriptionWeatherInfo);
+            subscriptionWeatherInfoService.add(subscriptionWeatherInfo);
             results.add(subscriptionWeatherInfo);
         }
         return results;

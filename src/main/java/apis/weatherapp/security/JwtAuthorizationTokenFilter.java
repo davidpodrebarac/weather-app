@@ -2,6 +2,7 @@ package apis.weatherapp.security;
 
 import java.io.IOException;
 import java.util.Map;
+import javax.management.InvalidAttributeValueException;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -39,7 +40,8 @@ public class JwtAuthorizationTokenFilter extends OncePerRequestFilter {
         logger.debug("processing authentication for '{}'", request.getRequestURL());
         final String requestHeader = request.getHeader(this.tokenHeader);
 
-        Map<String, String> map = jwtTokenUtil.getUserAndTokenFromCookies(request.getCookies());
+        Map<String, String> map = null;
+        map = jwtTokenUtil.getUserAndTokenFromCookies(request.getCookies());
         String username = map.get("username");
         String authToken = map.get("token");
 

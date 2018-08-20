@@ -18,7 +18,7 @@ public class CitySubscriptionController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public List<CitySubscription> getAllSubscriptionsForUser(HttpServletRequest request) {
-		List<CitySubscription> all = citySubService.getAllSubscriptions();
+		List<CitySubscription> all = citySubService.findAll();
 		return all;
 	}
 

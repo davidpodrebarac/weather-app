@@ -1,12 +1,10 @@
 package apis.weatherapp.metaweather.city;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import apis.weatherapp.metaweather.city.subscription.CitySubscription;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class CityService {
@@ -24,4 +22,11 @@ public class CityService {
 		return cityRepository.findById(id).get();
 	}
 
+	public List<City> findByCountryId(long countryId) {
+		return cityRepository.findByCountryId(countryId);
+	}
+
+	public City findByTitle(String title) {
+		return cityRepository.findByTitle(title);
+	}
 }
