@@ -2661,44 +2661,44 @@
     "woeid": 23424748,
     "latt_long": "-24.912100,133.397552",
     "children": [
-  {"Australia": {
-    "children": [
       {
-        "title": "Adelaide",
-        "location_type": "City",
-        "woeid": 1099805,
-        "latt_long": "-34.926102,138.599884"
-      },
-      {
-        "title": "Brisbane",
-        "location_type": "City",
-        "woeid": 1100661,
-        "latt_long": "-27.468880,153.022827"
-      },
-      {
-        "title": "Melbourne",
-        "location_type": "City",
-        "woeid": 1103816,
-        "latt_long": "-37.817532,144.967148"
-      },
-      {
-        "title": "Perth",
-        "location_type": "City",
-        "woeid": 1098081,
-        "latt_long": "-31.953020,115.857239"
-      },
-      {
-        "title": "Sydney",
-        "location_type": "City",
-        "woeid": 1105779,
-        "latt_long": "-33.869629, 151.206955"
+        "children": [
+          {
+            "title": "Adelaide",
+            "location_type": "City",
+            "woeid": 1099805,
+            "latt_long": "-34.926102,138.599884"
+          },
+          {
+            "title": "Brisbane",
+            "location_type": "City",
+            "woeid": 1100661,
+            "latt_long": "-27.468880,153.022827"
+          },
+          {
+            "title": "Melbourne",
+            "location_type": "City",
+            "woeid": 1103816,
+            "latt_long": "-37.817532,144.967148"
+          },
+          {
+            "title": "Perth",
+            "location_type": "City",
+            "woeid": 1098081,
+            "latt_long": "-31.953020,115.857239"
+          },
+          {
+            "title": "Sydney",
+            "location_type": "City",
+            "woeid": 1105779,
+            "latt_long": "-33.869629, 151.206955"
+          }
+        ],
+        "title": "Australia",
+        "location_type": "Country",
+        "woeid": 23424748,
+        "latt_long": "-24.912100,133.397552"
       }
-    ]},
-    "title": "Australia",
-    "location_type": "Country",
-    "woeid": 23424748,
-    "latt_long": "-24.912100,133.397552"
-  }
     ]
   }
 }

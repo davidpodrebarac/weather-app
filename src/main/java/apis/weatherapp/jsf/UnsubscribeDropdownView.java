@@ -1,5 +1,6 @@
 package apis.weatherapp.jsf;
 
+import apis.weatherapp.metaweather.city.City;
 import apis.weatherapp.metaweather.city.subscription.CitySubscription;
 import apis.weatherapp.metaweather.city.subscription.CitySubscriptionService;
 import apis.weatherapp.security.model.User;
@@ -11,8 +12,8 @@ import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Named
 @ViewScoped
@@ -33,7 +34,14 @@ public class UnsubscribeDropdownView extends UserExtractor {
     public List<String> getSubscriptions() {
         HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         User user = this.getAuthenticatedUser(request);
-        return citySubscriptionService.findAll(user.getId()).stream().map(cs -> cs.getCity().getTitle()).collect(Collectors.toList());
+        List<String> cityNames = new ArrayList<>();
+        for (CitySubscription cs : citySubscriptionService.findAll(user.getId())) {
+            City city = cs.getCity();
+            String name = city.getTitle();
+            cityNames.add(name);
+        }
+//        return citySubscriptionService.findAll(user.getId()).stream().map(cs -> cs.getCity().getTitle()).collect(Collectors.toList());
+        return cityNames;
     }
 
     public void unsubscribe() {

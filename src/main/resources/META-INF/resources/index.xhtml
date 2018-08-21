@@ -41,7 +41,7 @@
                 <h:panelGrid columns="2" cellpadding="5">
                     <p:outputLabel for="continent" value="Continent: "/>
                     <p:selectOneMenu id="continent" value="#{subscribeDropdownView.continent}" style="width:150px">
-                        <p:ajax listener="#{subscribeDropdownView.onContinentChange}" update="country"/>
+                        <p:ajax listener="#{subscribeDropdownView.onContinentChange}" update="country city"/>
                         <f:selectItem itemLabel="Select Continent" itemValue="" noSelectionOption="true"/>
                         <f:selectItems value="#{subscribeDropdownView.continents}"/>
                     </p:selectOneMenu>

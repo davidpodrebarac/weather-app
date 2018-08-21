@@ -91,6 +91,7 @@ public class SubscribeDropdownView extends UserExtractor {
             countries = countryService.findByContinentId(continentObj.getId());
         } else {
             countries = new ArrayList<>();
+            cities = new ArrayList<>();
         }
 
     }
@@ -101,6 +102,7 @@ public class SubscribeDropdownView extends UserExtractor {
             cities = cityService.findByCountryId(countryObj.getId());
         } else {
             cities = new ArrayList<>();
+            city = "";
         }
     }
 
@@ -109,12 +111,14 @@ public class SubscribeDropdownView extends UserExtractor {
         HttpServletRequest request = (HttpServletRequest) facesContext.getExternalContext().getRequest();
 
         FacesMessage msg;
-        if (city != null && country != null && continent != null) {
+        if (city != null && country != null && continent != null && !city.isEmpty() && !country.isEmpty() && !continent.isEmpty()) {
             cityObj = cityService.findByTitle(city);
             User user = this.getAuthenticatedUser(request);
             CitySubscription cs = new CitySubscription(user, cityObj);
             citySubscriptionService.add(cs);
             msg = new FacesMessage("Subscribed to ", city + " of " + country + " of " + continent);
+            countryObj = null;
+            cityObj = null;
         } else
             msg = new FacesMessage(FacesMessage.SEVERITY_ERROR, "Invalid", "City is not selected.");
 

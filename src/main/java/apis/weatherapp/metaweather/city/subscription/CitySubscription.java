@@ -17,10 +17,10 @@ public class CitySubscription {
     @Id
     @GeneratedValue
     private Long id;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "user_id")
     private User user;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "city_id")
     private City city;
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
