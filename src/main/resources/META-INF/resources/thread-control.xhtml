@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>PrimeFaces Hello World Example</title>
+    <h:outputStylesheet name="/css/main.css"/>
+</h:head>
+
+<h:body>
+    <h2>Thread control requests</h2>
+    <p:dataTable id="threadRequests" var="tr" value="#{threadControlView.threadRequests}">
+
+        <p:column headerText="Created">
+            <h:outputText value="#{tr.created}"/>
+        </p:column>
+        <p:column headerText="Message">
+            <h:outputText value="#{tr.message}"/>
+        </p:column>
+        <p:column headerText="Thread started?">
+            <h:outputText value="#{tr.commandStart}"/>
+        </p:column>
+
+
+    </p:dataTable>
+</h:body>
+</html>

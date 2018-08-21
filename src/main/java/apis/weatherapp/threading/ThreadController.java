@@ -1,6 +1,8 @@
 package apis.weatherapp.threading;
 
 import apis.weatherapp.metaweather.rest.controllers.WeatherInfoController;
+import apis.weatherapp.threading.models.ThreadControl;
+import apis.weatherapp.threading.services.ThreadControlService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +36,8 @@ public class ThreadController implements Runnable {
     private Boolean sendNotificationsFlag;
     @Autowired
     private NotificationService notificationService;
+    @Autowired
+    private ThreadControlService threadControlService;
 
     private Thread runner;
     private Pattern startPatter;
@@ -69,11 +73,13 @@ public class ThreadController implements Runnable {
                         int minutes = Integer.parseInt(startMatcher.group(2));
                         periodicSaverThread.unpause();
                         outputLine = "Server thread started.";
+                        threadControlService.save(new ThreadControl(true, inputLine));
                     } else if (endMatcher.matches()) {
                         LOGGER.info("Stoping saver thread, received string:'{}'.", inputLine);
                         int minutes = Integer.parseInt(endMatcher.group(2));
                         periodicSaverThread.pause();
                         outputLine = "Server thread paused.";
+                        threadControlService.save(new ThreadControl(false, inputLine));
                     } else {
                         LOGGER.info("Invalid input, received:'{}'.", inputLine);
                         outputLine = "Invalid input!\nTry " + this.startRegex + " for starting the thread or " + this.endRegex + " for" +
