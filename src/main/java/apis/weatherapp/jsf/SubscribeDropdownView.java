@@ -84,8 +84,13 @@ public class SubscribeDropdownView extends UserExtractor {
         if (cities == null)
             return new HashMap<>();
         else {
-            cities.removeIf(c -> alreadySubscribed.contains(c.getTitle()));
-            return cities.stream().collect(Collectors.toMap(LocationData::getTitle, LocationData::getTitle));
+            List<City> filtered = new ArrayList<>();
+            cities.forEach(c -> {
+                if (!alreadySubscribed.contains(c.getTitle())) {
+                    filtered.add(c);
+                }
+            });
+            return filtered.stream().collect(Collectors.toMap(LocationData::getTitle, LocationData::getTitle));
         }
     }
 
