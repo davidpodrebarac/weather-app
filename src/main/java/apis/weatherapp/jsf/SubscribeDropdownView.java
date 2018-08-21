@@ -18,10 +18,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Named
@@ -81,14 +78,22 @@ public class SubscribeDropdownView extends UserExtractor {
     }
 
     public Map<String, String> getCities() {
-        return cities == null ? new HashMap<>() :
-                cities.stream().collect(Collectors.toMap(LocationData::getTitle, LocationData::getTitle));
+        HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        User user = this.getAuthenticatedUser(request);
+        Set<String> alreadySubscribed = citySubscriptionService.findAll(user.getId()).stream().map(cs -> cs.getCity().getTitle()).collect(Collectors.toSet());
+        if (cities == null)
+            return new HashMap<>();
+        else {
+            cities.removeIf(c -> alreadySubscribed.contains(c.getTitle()));
+            return cities.stream().collect(Collectors.toMap(LocationData::getTitle, LocationData::getTitle));
+        }
     }
 
     public void onContinentChange() {
         if (continent != null && !continent.equals("")) {
             continentObj = continentService.findByTitle(continent);
             countries = countryService.findByContinentId(continentObj.getId());
+            cities = new ArrayList<>();
         } else {
             countries = new ArrayList<>();
             cities = new ArrayList<>();
