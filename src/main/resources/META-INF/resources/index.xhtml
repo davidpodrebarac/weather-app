@@ -84,38 +84,55 @@
     </h:form>
 
     <p:separator/>
-    <p:dataTable id="subscriptionWeatherInfos" var="svi" value="#{subscriptionWeatherInfoView.weatherInfos}">
-        <p:column headerText="City">
+    <p:dataTable id="subscriptionWeatherInfos" var="svi" value="#{subscriptionWeatherInfoView.weatherInfos}" style="width: 100%">
+        <f:facet name="header">Weather Subscription Infos</f:facet>
+
+        <p:column headerText="City" width="9%">
             <h:outputText value="#{svi.citySubscription.city.title}"/>
         </p:column>
-        <p:column headerText="Time">
+        <p:column headerText="Time" width="9%">
             <h:outputText value="#{svi.weatherInfo.time}"/>
         </p:column>
-        <p:column headerText="Sunrise">
+        <p:column headerText="Sunrise" width="9%">
             <h:outputText value="#{svi.weatherInfo.sunRise}"/>
         </p:column>
-        <p:column headerText="Sunset">
+        <p:column headerText="Sunset" width="9%">
             <h:outputText value="#{svi.weatherInfo.sunSet}"/>
         </p:column>
+
+
         <p:column>
-            <p:dataTable id="consolidatedWeathers" var="cw" value="#{svi.weatherInfo.consolidatedWeather}">
-                <p:column headerText="Air pressure">
-                    <h:outputText value="#{cw.airPressure}"/>
-                </p:column>
-                <p:column headerText="Humidity">
-                    <h:outputText value="#{cw.humidity}"/>
-                </p:column>
+            <p:dataTable var="cwi" value="#{svi.weatherInfo.consolidatedWeather}" width="45%">
                 <p:column headerText="Min temp">
-                    <h:outputText value="#{cw.minTemp}"/>
+                    <h:outputText value="#{cwi.minTemp}"/>
                 </p:column>
                 <p:column headerText="Max temp">
-                    <h:outputText value="#{cw.maxTemp}"/>
+                    <h:outputText value="#{cwi.maxTemp}"/>
                 </p:column>
                 <p:column headerText="Visibility">
-                    <h:outputText value="#{cw.visibility}"/>
+                    <h:outputText value="#{cwi.visibility}"/>
+                </p:column>
+                <p:column headerText="Humidity">
+                    <h:outputText value="#{cwi.humidity}"/>
+                </p:column>
+                <p:column headerText="Air Pressure">
+                    <h:outputText value="#{cwi.airPressure}"/>
                 </p:column>
             </p:dataTable>
         </p:column>
+
+        <p:column>
+            <p:dataTable var="s" value="#{svi.weatherInfo.sources}" width="19%">
+                <p:column headerText="Source title">
+                    <h:outputText value="#{s.title}"/>
+                </p:column>
+                <p:column headerText="Source url">
+                    <h:outputText value="#{s.url}"/>
+                </p:column>
+            </p:dataTable>
+        </p:column>
+
+
     </p:dataTable>
 
     <p:separator/>
